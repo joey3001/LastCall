@@ -2,87 +2,78 @@
 
 1. Beer color:
 
-- pale, straw, pee color (lightest)
+<!-- - pale, straw, pee color (lightest)
 - golden
 - amber
 - brown
 - black (darkest)
 
-or
+or -->
 
 - light
+- brown
 - dark
 
-2. Bitterness:
+<!-- 2. Bitterness:
 
 - not bitter
-- bitter
+- bitter -->
 
 3. Flavor: // probably question number two
 
 - mild flavor
-  - white bread
+  <!-- - white bread -->
 - sweet
-  - chocolatey
-  - caramel
-- fruity
-  - citrus
-  - banana
-  - berry
-  - tropical
-- sour
+    <!-- - chocolatey
+    - caramel -->
+  <!-- - fruity
+    - citrus
+    - banana
+    - berry
+    - tropical -->
+  <!-- - sour -->
 - bitter
-  - piney
-  - coffee
+  <!-- - piney
+  - coffee -->
 
 4. ABV
 
-- how strong do you like your beer?
-- taste the alcohol
-- no taste of alcohol
+- 0-5%
+- 5-7%
+<!-- - 10+% -->
 
 5. Carbonation
 
 - low
 - high
-- mild
+<!-- - mild -->
 
-6. Gluten free? Do you like beer? // probably first question
+<!-- 6. Gluten free? Do you like beer? // probably first question
 
 - yes i love beer == move on to flavor question
 - no, i prefer cider == result should only suggest cider
-- yes, but i am gluten intolerant == result should only suggest gluten free beer
+- yes, but i am gluten intolerant == result should only suggest gluten free beer -->
 
-7. What type of beer do you normally drink?
+<!-- 7. What type of beer do you normally drink?
 
 - heineken
 - corona
 - guinness
 - American example: bud, coorslight
 - Craft example: ipas, sours
-- Belgian
+- Belgian/wheatbeer -->
 
 - Results
 
-  - Beer options:
-    - IPAs
-    - Pilsner
-      - coorslight
-    - Hefenweizen/wheat beer
-      - widmer hefe
-      - bluemoon
-    - Pale Ales
-      - sierra nevada
-    - Brown Ales
-      - newcastle
-    - Stouts
-      - guinness
-    - Amber
-      - marzen
-      - oktoberfest
-    - Sours
-      - Framboise
-      - Kriek
+- Beer options:
+  - IPAs - 7 - Craft example: ipas, sours, 5 - high, 4 - taste the alcohol,
+  - Pilsner
+  <!-- - Hefenweizen/wheat beer
+  - Pale Ales
+  - Brown Ales -->
+  - Stouts
+  <!-- - Amber
+  - Sours -->
 
 # Last Call
 
