@@ -16,5 +16,3 @@ $(document).ready(function () {
     }
   });
 });
-
-//const color = $("input:radio[name=color]:checked").val();

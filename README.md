@@ -2,78 +2,72 @@
 
 1. Beer color:
 
-<!-- - pale, straw, pee color (lightest)
+- pale, straw, pee color (lightest)
 - golden
 - amber
 - brown
+- any
 - black (darkest)
 
-or -->
+or
 
 - light
 - amber
 - dark
 
-<!-- 2. Bitterness:
+2. IBU/Bitterness:
 
 - not bitter
-- bitter -->
+- bitter
 
 3. Flavor: // probably question number two
 
 - mild flavor
-  <!-- - white bread -->
+  - white bread
 - sweet
-    <!-- - chocolatey
-    - caramel -->
-  <!-- - fruity
+  - chocolatey
+  - caramel
+  - fruity
     - citrus
     - banana
     - berry
-    - tropical -->
-  <!-- - sour -->
+    - tropical
+  - sour
 - bitter
-  <!-- - piney
-  - coffee -->
+  - piney
+  - coffee
 
 4. ABV
 
 - 0-5%
 - 5-7%
-<!-- - 10+% -->
+- 10+%
 
-5. Carbonation
-
-- low
-- high
-<!-- - mild -->
-
-<!-- 6. Gluten free? Do you like beer? // probably first question
+6. Gluten free? Do you like beer? // probably first question
 
 - yes i love beer == move on to flavor question
 - no, i prefer cider == result should only suggest cider
-- yes, but i am gluten intolerant == result should only suggest gluten free beer -->
+- yes, but i am gluten intolerant == result should only suggest gluten free beer
 
-<!-- 7. What type of beer do you normally drink?
+7. What type of beer do you normally drink?
 
 - heineken
 - corona
 - guinness
 - American example: bud, coorslight
 - Craft example: ipas, sours
-- Belgian/wheatbeer -->
+- Belgian/wheatbeer
 
 - Results
 
 - Beer options:
-  - IPAs: amber, bitter, 5-7%, high
-  - Pilsner: light, mild, 0-5%, high
-  <!-- - Hefenweizen/wheat beer
-  - Pale Ales
-  - Brown Ales -->
-  - Stouts; dark, sweet, 0-5, low
-  <!-- - Amber
-  - Sours -->
+  - IPAs: color:golden/amber, IBU: 50-70, ABV: 6-10%, Clarity: clear, Flavor: Hoppy, citrus, pine, danky
+  - Pilsner: color:light, IBU: 25-35, ABV: 4.5-5%, Clarity: clear, Flavor: crisp, mild, light
+  - Hefenweizen/wheat beer color: golden, IBU: 5-10, ABV: 4-7%, Clarity: hazy, Flavor: sweet, fruity, banana, clove
+  - Pale Ales color: amber, IBU: 10-20, ABV: 5%, Clarity: clear, Flavor: hop-forward, malty
+  - Brown Ales color: brown, IBU: 18-35, ABV: 5-6%, Clarity: pretty clear, Flavor: carmamel, chocolate, toasty
+  - Stouts; color: black, IBU: 10-20, ABV: 4-5%, Clarity: Dark as my soul, Flavor: strong roasted malt, coffee, dark chocolate
+  - Sours color: any, IBU: 0-10, ABV: 3-5%, Clarity: Can be hazy, Flavor: sour, tart, acidic
 
 # Last Call
 
