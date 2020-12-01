@@ -6,15 +6,78 @@
 <body>
   <h3>Brewery Finder</h3>
   <form id="breweryInput">
+    <select class="form-control" id="compass" required>
+      <option value="N">N</option>
+      <option value="NE">NE</option>
+      <option value="E">E</option>
+      <option value="SE">SE</option>
+      <option value="S">S</option>
+      <option value="SW">SW</option>
+      <option value="W">W</option>
+      <option value="NW">NW</option>
+      <option value="">None</option>
+    </select> 
     <label for="street">Enter your street address</label>
-    <input id="street" type="text">
-    <label for="city">Enter your state</label>
-    <input id="city" type="text">
-    <label for="state">Enter your state</label>
-    <input id="state" type="text">
+    <input id="street" type="text" required>
+    <label for="city">Enter your city</label>
+    <input id="city" type="text" required>
+    <select class="form-control" id="state" required>
+      <option value="">Select your state</option>
+      <option value="al, Alabama">Alabama</option>
+      <option value="ak, Alaska">Alaska</option>
+      <option value="az, Arizona">Arizona</option>
+      <option value="ar, Arkansas">Arkansas</option>
+      <option value="ca, California">California</option>
+      <option value="co, Colorado">Colorado</option>
+      <option value="ct, Connecticut">Connecticut</option>
+      <option value="de, Delaware">Delaware</option>
+      <option value="dc, District of Columbia">District Of Columbia</option>
+      <option value="fl, Florida">Florida</option>
+      <option value="ga, Georgia">Georgia</option>
+      <option value="hi, Hawaii">Hawaii</option>
+      <option value="id, Idaho">Idaho</option>
+      <option value="il, Illinois">Illinois</option>
+      <option value="in, Indiana">Indiana</option>
+      <option value="ia, Iowa">Iowa</option>
+      <option value="ks, Kansas">Kansas</option>
+      <option value="ky, Kentucky">Kentucky</option>
+      <option value="la, Louisiana">Louisiana</option>
+      <option value="me, Maine">Maine</option>
+      <option value="md, Maryland">Maryland</option>
+      <option value="ma, Massachusetts">Massachusetts</option>
+      <option value="mi, Michigan">Michigan</option>
+      <option value="mn, Minnesota">Minnesota</option>
+      <option value="ms, Mississippi">Mississippi</option>
+      <option value="mo, Missouri">Missouri</option>
+      <option value="mt, Montana">Montana</option>
+      <option value="ne, Nebraska">Nebraska</option>
+      <option value="nv, Nevada">Nevada</option>
+      <option value="nh, New Hampshire">New Hampshire</option>
+      <option value="nj, New Jersey">New Jersey</option>
+      <option value="nm, New Mexico">New Mexico</option>
+      <option value="ny, New York">New York</option>
+      <option value="nc, North Carolina">North Carolina</option>
+      <option value="nd, North Dakota">North Dakota</option>
+      <option value="oh, Ohio">Ohio</option>
+      <option value="ok, Oklahoma">Oklahoma</option>
+      <option value="or, Oregon">Oregon</option>
+      <option value="pa, Pennsylvania">Pennsylvania</option>
+      <option value="ri, Rhode Island">Rhode Island</option>
+      <option value="sc, South Carolina">South Carolina</option>
+      <option value="sd, South Dakota">South Dakota</option>
+      <option value="tn, Tennessee">Tennessee</option>
+      <option value="tx, Texas">Texas</option>
+      <option value="ut, Utah">Utah</option>
+      <option value="vt, Vermont">Vermont</option>
+      <option value="va, Virginia">Virginia</option>
+      <option value="wa, Washington">Washington</option>
+      <option value="wv, West Virginia">West Virginia</option>
+      <option value="wi, Wisconsin">Wisconsin</option>
+      <option value="wy, Wyoming">Wyoming</option>
+    </select>
     <label for="zip">Enter your zip</label>
-    <input id="zip" type="text">
-    <button type="button" class="btn btn-primary">Submit</button>
+    <input id="zip" type="text" required>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </body>
 </html>
