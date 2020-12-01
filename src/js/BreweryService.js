@@ -12,6 +12,7 @@ export class BreweryService {
     });
   }
   static addressCoords(compass, street, city, state, zip) {
+    console.log(`http://www.mapquestapi.com/geocoding/v1/address?key=mtwjNpdStw1KmG04UiK79YlvKt4W2PEO&street=${street}+${compass}&city=${city}&state=${state}&postalCode=${zip}`)
     return fetch(`http://www.mapquestapi.com/geocoding/v1/address?key=mtwjNpdStw1KmG04UiK79YlvKt4W2PEO&street=${street}+${compass}&city=${city}&state=${state}&postalCode=${zip}`)
     .then(function (response) {
       if (!response.ok) {
