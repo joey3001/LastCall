@@ -11,7 +11,7 @@
 or -->
 
 - light
-- brown
+- amber
 - dark
 
 <!-- 2. Bitterness:
@@ -66,12 +66,12 @@ or -->
 - Results
 
 - Beer options:
-  - IPAs - 7 - Craft example: ipas, sours, 5 - high, 4 - taste the alcohol,
-  - Pilsner
+  - IPAs: amber, bitter, 5-7%, high
+  - Pilsner: light, mild, 0-5%, high
   <!-- - Hefenweizen/wheat beer
   - Pale Ales
   - Brown Ales -->
-  - Stouts
+  - Stouts; dark, sweet, 0-5, low
   <!-- - Amber
   - Sours -->
 
