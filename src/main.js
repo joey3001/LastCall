@@ -6,20 +6,16 @@ import { BreweryService } from './js/BreweryService.js';
 
 $(document).ready(function() {
   $('#breweryInput').click(function() {
-    BreweryService.findBrewery('Portland') 
+    BreweryService.findBrewery('co') 
       .then(function(response) {
-        console.log(response); 
-    });   
-    let y = []; 
-    BreweryService.addressCoords('1600+Pennsylvania+Ave+NW', 'Washington', 'DC', '20500') 
-      .then(function(response) {
-        console.log(response.results[0].locations[0].displayLatLng.lat);
-        console.log(response.results[0].locations[0].displayLatLng.lng);
-        
-        y[0] = response.results[0].locations[0].displayLatLng.lat;
-        y[1] = response.results[0].locations[0].displayLatLng.lng;
-      })
-      console.log(y)
+        let z = [];
+        for (let i = 0; i < response.length ; i++) {
+          BreweryService.addressCoords(response[i].street.replace(/ /g,"+"), response[i].city.replace(/ /g,"+"), 'Colorado', response[i].zip)
+          .then(function(response) {
+            z[i] = response.results[0].locations[0].displayLatLng;
+          })
+        }
+    });
   });
 });
 

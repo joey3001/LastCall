@@ -1,6 +1,6 @@
 export class BreweryService {
-  static findBrewery(city) {
-    return fetch(`https://api.openbrewerydb.org/breweries?by_city=${city}&per_page=50&by_state=Oregon&by_type=micro`)
+  static findBrewery(state) {
+    return fetch(`http://beermapping.com/webservice/locstate/9fc31f691baa30b0ee58bcc49747b840/${state}&s=json`)
     .then(function (response) {
       if (!response.ok) {
         throw Error(response.statusText);
