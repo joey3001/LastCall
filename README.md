@@ -61,13 +61,13 @@ or
 - Results
 
 - Beer options:
-  - IPAs: color:golden/amber, IBU: 50-70, ABV: 6-10%, Clarity: clear, Flavor: Hoppy, citrus, pine, danky
-  - Pilsner: color:light, IBU: 25-35, ABV: 4.5-5%, Clarity: clear, Flavor: crisp, mild, light
-  - Hefenweizen/wheat beer color: golden, IBU: 5-10, ABV: 4-7%, Clarity: hazy, Flavor: sweet, fruity, banana, clove
-  - Pale Ales color: amber, IBU: 10-20, ABV: 5%, Clarity: clear, Flavor: hop-forward, malty
-  - Brown Ales color: brown, IBU: 18-35, ABV: 5-6%, Clarity: pretty clear, Flavor: carmamel, chocolate, toasty
-  - Stouts; color: black, IBU: 10-20, ABV: 4-5%, Clarity: Dark as my soul, Flavor: strong roasted malt, coffee, dark chocolate
-  - Sours color: any, IBU: 0-10, ABV: 3-5%, Clarity: Can be hazy, Flavor: sour, tart, acidic
+  - IPAs: color:golden/amber(2,3), IBU: 50-70(4), ABV: 6-10%, Clarity: clear(1), Flavor: Hoppy, citrus, pine, danky(100)
+  - Pilsner: color:light(1), IBU: 25-35(3), ABV: 4.5-5%, Clarity: clear(1), Flavor: crisp, mild, light(200)
+  - Hefenweizen/wheat beer color: golden(2), IBU: 5-10, ABV: 4-7%, Clarity: hazy(2), Flavor: sweet, fruity, banana, clove(300)
+  - Pale Ales color: amber(3), IBU: 10-20(2), ABV: 5%, Clarity: clear(2), Flavor: hop-forward, malty(400)
+  - Brown Ales color: brown(4), IBU: 18-35(3), ABV: 5-6%, Clarity: pretty clear(2), Flavor: carmamel, chocolate, toasty(500)
+  - Stouts; color: black(5), IBU: 10-20(2), ABV: 4-5%, Clarity: both(1,2), Flavor: strong roasted malt, coffee, dark chocolate(600)
+  - Sours color: red(6), IBU: 0-10, ABV: 3-5%(1), Clarity: Can be hazy(1,2), Flavor: sour, tart, acidic(700)
 
 # Last Call
 
