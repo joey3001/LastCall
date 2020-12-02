@@ -17,10 +17,28 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: "",
       template: "./src/index.html",
-      inject: "body",
+      filename: "index.html",
+      inject: "body"
     }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/history.html",
+      filename: "history.html"
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/quiz.html",
+      filename: "quiz.html",
+      inject: "body"
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/location.html",
+      filename: "location.html",
+      inject: "body"
+    }),
+    
   ],
   module: {
     rules: [

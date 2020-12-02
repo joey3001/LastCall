@@ -1,5 +1,1150 @@
-body {
-  background-color: floralwhite;
+body { 
+  background-color: #008B8B 
+}
+
+#container {
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+}
+
+#container div { 
+  position: absolute; 
+}
+
+#top {
+  border-top: 0;
+  border-radius: 0 0 30px 30px;
+  height: 200px;
+}
+
+#liquid {
+  background-color: #f2c025;
+  border: 1px solid #f2c025;
+  height: 200px;
+  overflow: hidden;
+  width: 1500px;
+}
+
+#liquid:after {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: -10px;
+  content: '';
+  height: 300px;
+  left: -40px;
+  position: absolute;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(15deg);
+  width: 200px;
+}
+
+#liquid:after {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: -70px;
+  content: '';
+  height: 900px;
+  left: -190px;
+  position: absolute;
+  -webkit-transform: rotate(-35deg);
+  width: 900px;
+  transform: rotate(50deg); 
+}
+
+#liquid .bubble {
+  -webkit-animation-name: bubble;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  background-color: rgba(255, 254, 239, 0.2);
+  bottom: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+@-webkit-keyframes bubble {
+  0% { bottom: 0; }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.2);
+      bottom: 80px;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+      bottom: 160px;
+  }
+}
+
+.bubble1 {
+  left: 10px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble2 {
+  left: 30px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble3 {
+  left: 70px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble4 {
+  left: 100px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble5 {
+  left: 130px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble6 {
+  left: 160px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble7 {
+  left: 190px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble8 {
+  left: 220px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble9 {
+  left: 250px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble10 {
+  left: 280px;
+  -webkit-animation-delay: 1400ms;
+  -webkit-animation-duration: 1400ms;
+}
+
+.bubble11 {
+  left: 310px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble12 {
+  left: 340px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble13 {
+  left: 370px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble14 {
+  left: 400px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble15 {
+  left: 430px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble16 {
+  left: 460px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble17 {
+  left: 490px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble18 {
+  left: 520px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble19 {
+  left: 550px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble20 {
+  left: 580px;
+  -webkit-animation-delay: 1400ms;
+  -webkit-animation-duration: 1400ms;
+}
+
+.bubble21 {
+  left: 610px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble22 {
+  left: 630px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble23 {
+  left: 670px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble24 {
+  left: 700px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble25 {
+  left: 730px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble26 {
+  left: 760px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble27 {
+  left: 790px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble28 {
+  left: 820px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble29 {
+  left: 850px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble30 {
+  left: 880px;
+  -webkit-animation-delay: 1400ms;
+  -webkit-animation-duration: 1400ms;
+}
+
+.bubble31 {
+  left: 910px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble32 {
+  left: 940px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble33 {
+  left: 970px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble34 {
+  left: 1000px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble35 {
+  left: 1030px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble36 {
+  left: 1060px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble37 {
+  left: 1090px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble38 {
+  left: 1120px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble39 {
+  left: 1150px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble40 {
+  left: 1080px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble41 {
+  left: 1110px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble42 {
+  left: 1140px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble43 {
+  left: 1170px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble44 {
+  left: 1200px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble45 {
+  left: 1230px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble46 {
+  left: 1260px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble47 {
+  left: 1290px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble48 {
+  left: 1320px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble49 {
+  left: 1350px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble50 {
+  left: 1380px;
+  -webkit-animation-delay: 1400ms;
+  -webkit-animation-duration: 1400ms;
+}
+
+.bubble51 {
+  left: 1410px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble52 {
+  left: 1440px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+/* Foam */
+.beer-foam {
+  position: absolute;
+  bottom: 10px;
+  height: 180px;
+}
+/*foam*/
+.foam-1, .foam-2, .foam-3, .foam-4, 
+.foam-5, .foam-6, .foam-7, .foam-8, 
+.foam-9, .foam-10, .foam-11, .foam-12,
+.foam-13, .foam-14, .foam-15, .foam-16,
+.foam-17, .foam-18, .foam-19, .foam-20, 
+.foam-21, .foam-22, .foam-23, .foam-24, 
+.foam-25, .foam-26, .foam-27, .foam-28, 
+.foam-29, .foam-30, .foam-31, .foam-32, 
+.foam-33, .foam-34, .foam-35, .foam-36, 
+.foam-37, .foam-38, .foam-39, .foam-40, 
+.foam-41, .foam-42, .foam-43, .foam-44, 
+.foam-45, .foam-46, .foam-47, .foam-48, 
+.foam-49, .foam-50, .foam-51, .foam-52, 
+.foam-53, .foam-54, .foam-55, .foam-56, 
+.foam-57, .foam-58, .foam-59, .foam-60
+{ 
+  float: left;
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #fefefe;
+}
+.foam-1 {
+  top: -30px;
+  left: -10px;
+}
+.foam-2 {
+  top: -35px;
+  left: 20px; 
+}
+.foam-3 {
+  top: -25px;
+  left: 50px; 
+}
+.foam-4 {
+  top: -35px;
+  left: 80px; 
+}
+.foam-5 {
+  top: -30px;
+  left: 110px; 
+}
+.foam-6 {
+  top: -20px;
+  left: 140px; 
+}
+.foam-7 {
+  top: -30px;
+  left: 160px;
+}
+.foam-8 {
+  top: -30px;
+  left: 170px;
+}
+.foam-9 {
+  top: -35px;
+  left: 170px; 
+}
+.foam-10 {
+  top: -25px;
+  left: 210px; 
+}
+.foam-11 {
+  top: -35px;
+  left: 250px; 
+}
+.foam-12 {
+  top: -30px;
+  left: 270px; 
+}
+.foam-13 {
+  top: -20px;
+  left: 300px; 
+}
+.foam-14 {
+  top: -30px;
+  left: 340px;
+}
+.foam-15 {
+  top: -30px;
+  left: 385px;
+}
+.foam-16 {
+  top: -40px;
+  left: 410px;
+}
+.foam-17 {
+  top: -35px;
+  left: 420px; 
+}
+.foam-18 {
+  top: -25px;
+  left: 450px; 
+}
+.foam-19 {
+  top: -40px;
+  left: 460px; 
+}
+.foam-20 {
+  top: -20px;
+  left: 470px; 
+}
+.foam-21 {
+  top: -30px;
+  left: 510px; 
+}
+.foam-22 {
+  top: -20px;
+  left: 520px;
+}
+.foam-23 {
+  top: -25px;
+  left: 550px;
+}
+.foam-24 {
+  top: -35px;
+  left: 570px; 
+}
+.foam-25 {
+  top: -25px;
+  left: 600px; 
+}
+.foam-26 {
+  top: -35px;
+  left: 620px; 
+}
+.foam-27 {
+  top: -30px;
+  left: 640px; 
+}
+.foam-28 {
+  top: -20px;
+  left: 670px; 
+}
+.foam-29 {
+  top: -25px;
+  left: 700px;
+}
+.foam-30 {
+  top: -40px;
+  left: 715px;
+} 
+.foam-31 {
+  top: -30px;
+  left: 730px;
+}
+.foam-32 {
+  top: -35px;
+  left: 750px; 
+}
+.foam-33 {
+  top: -25px;
+  left: 780px; 
+}
+.foam-34 {
+  top: -35px;
+  left: 800px; 
+}
+.foam-35 {
+  top: -20px;
+  left: 820px; 
+}
+.foam-36 {
+  top: -25px;
+  left: 840px; 
+}
+.foam-37 {
+  top: -30px;
+  left: 865px;
+}
+.foam-38 {
+  top: -35px;
+  left: 875px;
+}
+.foam-39 {
+  top: -40px;
+  left: 900px; 
+}
+.foam-40 {
+  top: -25px;
+  left: 930px; 
+}
+.foam-41 {
+  top: -30px;
+  left: 950px;
+}
+.foam-42 {
+  top: -35px;
+  left: 970px; 
+}
+.foam-43 {
+  top: -25px;
+  left: 990px; 
+}
+.foam-44 {
+  top: -35px;
+  left: 1000px; 
+}
+.foam-45 {
+  top: -30px;
+  left: 1030px; 
+}
+.foam-46 {
+  top: -20px;
+  left: 1050px; 
+}
+.foam-47 {
+  top: -30px;
+  left: 1080px;
+}
+.foam-48 {
+  top: -35px;
+  left: 1110px; 
+}
+.foam-49 {
+  top: -25px;
+  left: 1140px; 
+}
+.foam-50 {
+  top: -35px;
+  left: 1180px; 
+}
+.foam-51 {
+  top: -30px;
+  left: 1200px;
+}
+.foam-52 {
+  top: -35px;
+  left: 1230px; 
+}
+.foam-53 {
+  top: -25px;
+  left: 1265px; 
+}
+.foam-54 {
+  top: -35px;
+  left: 1280px; 
+}
+.foam-55 {
+  top: -30px;
+  left: 1310px; 
+}
+.foam-56 {
+  top: -20px;
+  left: 1330px; 
+}
+.foam-57 {
+  top: -30px;
+  left: 1350px;
+}
+.foam-58 {
+  top: -30px;
+  left: 1375px;
+}
+.foam-59 {
+  top: -35px;
+  left: 1400px; 
+}
+.foam-60 {
+  top: -25px;
+  left: 1420px; 
+}
+
+/* MP3 */
+#mp3, #mp31 {
+margin-left: 12in;
+margin-top: 0.1in;
+width: 1.7in;
+} 
+#mp3 {
+  display: none;
+}
+
+/* AGE VERIFICATION */
+.btn {
+  background-color: #f2c025;
+  color: rgb(255, 255, 255);
+}
+.btn.btn-no {
+  background-color: rgb(150, 23, 23);
+}
+.box-center {
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #000000;
+  text-align: center;
+  padding: 1%;
+}
+
+/* FONTS */
+#h1 {
+  color:#fff;
+  position: absolute;
+  margin-left: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 7em;
+  padding-top: 20px;
+  font-weight: bolder;
+}
+h1 {
+  color:#fff;
+  position: absolute;
+  margin-left: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 7em;
+  padding-top: 20px;
+  font-weight: bolder;
+}
+h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border-bottom: 1px solid #fff;
+}
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  border-bottom: 1px solid #fff;
+}
+p {
+  color: #fff;
+}
+
+/*buttons*/
+.dir, .dir1 {
+  margin-top: -0.5in;
+}
+.dir {
+  display: none;
+}
+.btn {
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  padding: 0.9em 1em 0.7em;
+  margin: 1em auto;
+  display: block;
+}
+ul {
+  float: left;
+  list-style-type: none;
+  margin-right: 1cm;
+}
+li {
+  margin: 0.3cm;
+  /* border: 0.1px solid black; */
+  padding: 2px 20px 1px;
+  border-radius: 1cm;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+li:hover {
+  /* background-color: #f2c025; */
+  color: black;
+  transition: 0.5s;
+} 
+
+
+/* HISTRY COLUMNS */
+.column1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  border-width: 5px;
+  width: 700px;
+}
+
+.column2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  border-width: 5px;
+  width: 700px;
+}
+
+.column3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  border-width: 5px;
+  width: 700px;
+}
+
+.column4 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  border-width: 5px;
+  width: 700px;
+}
+
+.column5 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  border-width: 5px;
+  width: 700px;
+}
+
+.column6 {
+  display: none;
+}
+.column6 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  border-width: 5px;
+  width: 700px;
+  height: 500px;
+}
+
+
+
+.bubble61 {
+  left: 20px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble62 {
+  left: 40px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble63 {
+  left: 80px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble64 {
+  left: 110px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble65 {
+  left: 140px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble66 {
+  left: 170px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble67 {
+  left: 200px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble68 {
+  left: 230px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble69 {
+  left: 260px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble70 {
+  left: 290px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble71 {
+  left: 320px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble72 {
+  left: 350px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble73 {
+  left: 380px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble74 {
+  left: 410px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble75 {
+  left: 440px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble76 {
+  left: 470px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble77 {
+  left: 500px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble78 {
+  left: 530px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble79 {
+  left: 550px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble80 {
+  left: 580px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble81 {
+  left: 610px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble82 {
+  left: 640px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble83 {
+  left: 680px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble84 {
+  left: 710px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble85 {
+  left: 740px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble86 {
+  left: 770px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble87 {
+  left: 800px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble88 {
+  left: 830px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble89 {
+  left: 860px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble90 {
+  left: 890px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble91 {
+  left: 930px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble92 {
+  left: 950px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble93 {
+  left: 980px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble94 {
+  left: 1010px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble95 {
+  left: 1040px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble96 {
+  left: 1070px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble97 {
+  left: 1100px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble98 {
+  left: 1130px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble99 {
+  left: 1160px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble100 {
+  left: 1090px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble101 {
+  left: 1120px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble102 {
+  left: 1150px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble103 {
+  left: 1180px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble104 {
+  left: 1210px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble105 {
+  left: 1240px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble106 {
+  left: 1270px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble107 {
+  left: 1300px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble108 {
+  left: 1330px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble109 {
+  left: 1360px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble110 {
+  left: 1390px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble111 {
+  left: 1420px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble112 {
+  left: 1450px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
 }
 
 li {
@@ -8,7 +1153,7 @@ li {
 
 #titlePage {
   z-index: 10;
-  background-color: floralwhite;
+  background-color:#008B8B ;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -18,3 +1163,4 @@ li {
   margin: 10%;
   width: 50%;
 }
+
