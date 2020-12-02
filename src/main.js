@@ -11,11 +11,10 @@ let breweryResult = [];
 async function trial(breweryListPerState, stateName2, userDist,selector) {
   for (let i = 0; i < breweryListPerState.length;) {//TODO
   let response3 = await BreweryService.addressCoords("", breweryListPerState[i].street.replace(/ /g,"+"), breweryListPerState[i].city.replace(/ /g,"+"), stateName2, breweryListPerState[i].zip); 
-  i++; 
-    let nameDist = {
-      distance: null,
-      name: null,
-    }
+  let nameDist = {
+    distance: null,
+    name: null,
+  }
   breweryLatLng[i] = response3.results[0].locations[0].displayLatLng;
   let dLng = (breweryLatLng[i].lng - userAddressLatLng.lng);
   let dLat = (breweryLatLng[i].lat - userAddressLatLng.lat);
@@ -38,6 +37,7 @@ async function trial(breweryListPerState, stateName2, userDist,selector) {
     }
   } 
 }
+
 
 $(document).ready(function() {
   $('#breweryInput').submit(async function() {
