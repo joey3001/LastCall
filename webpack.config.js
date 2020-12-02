@@ -38,6 +38,12 @@ module.exports = {
       filename: "location.html",
       inject: "body"
     }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/titlepage.html",
+      filename: "titlepage.html",
+      inject: "body"
+    }),
     
   ],
   module: {

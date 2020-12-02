@@ -666,9 +666,6 @@ margin-left: 12in;
 margin-top: 0.1in;
 width: 1.7in;
 } 
-#mp3 {
-  display: none;
-}
 
 /* AGE VERIFICATION */
 .btn {
@@ -726,9 +723,7 @@ p {
 .dir, .dir1 {
   margin-top: -0.5in;
 }
-.dir {
-  display: none;
-}
+
 .btn {
   font-weight: 600;
   letter-spacing: 0.3em;
@@ -818,9 +813,6 @@ li:hover {
 }
 
 .column6 {
-  display: none;
-}
-.column6 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -832,8 +824,6 @@ li:hover {
   width: 700px;
   height: 500px;
 }
-
-
 
 .bubble61 {
   left: 20px;
@@ -1164,3 +1154,15 @@ li {
   width: 50%;
 }
 
+.brewery {
+
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+}
+
+.form-control {
+  width: 4in;
+}

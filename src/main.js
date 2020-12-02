@@ -9,13 +9,14 @@ import Beers from "../src/js/beers.js";
 import User from "../src/js/user.js";
 
 $(document).ready(function () {
-  $('.box').show();
-  $('.btn-yes').click(function() {
-    $('.box').hide();
-    $('.dir').show();
-    $('.column6').show();
-    $('#mp3').show();
-  });
+
+  //$('.box').show();
+  // $('.btn-yes').click(function() {
+  //   $('.box').hide();
+  //   $('.dir').show();
+  //   $('.column6').show();
+  //   $('#mp3').show();
+  // });
   $('.btn-no').click(function() {
     window.location.href = 'http://google.com/';
   });
