@@ -14,7 +14,7 @@ export class BreweryService {
 
   static async addressCoords(compass, street, city, state, zip) {
     try { 
-      const response = await fetch (`http://www.mapquestapi.com/geocoding/v1/address?key=mtwjNpdStw1KmG04UiK79YlvKt4W2PEO&street=${street}+${compass}&city=${city}&state=${state}&postalCode=${zip}`);
+      const response = await fetch (`http://www.mapquestapi.com/geocoding/v1/address?key=W93i9RAAUIOJySGNRJvUGtKJbIEdjTwN&street=${street}+${compass}&city=${city}&state=${state}&postalCode=${zip}`);
       if (!response.ok) {
         throw Error(response.statusText); 
       }

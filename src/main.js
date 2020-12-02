@@ -22,6 +22,7 @@ $(document).ready(function() {
     let userAddressLatLng = response.results[0].locations[0].displayLatLng;
     let response2 = await BreweryService.findBrewery(stateAbv);
     breweryListPerState = response2.filter(brewery => (brewery.status === "Brewpub" || brewery.status === "Brewery"));
+    console.log(breweryListPerState);
     breweryPost(breweryListPerState, stateName2, userDist, '#output', userAddressLatLng);
   });
 });
