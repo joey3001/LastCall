@@ -29,9 +29,8 @@ export default async function breweryPost(breweryListPerState, stateName2, userD
     if(i === breweryListPerState.length-1) {
       for (let j = 0; j < breweryResult.length ; j++) { 
         $(selector).append('<li><strong>' + breweryResult[j].name.name + '</strong></li>');
+        $(selector).append('<ul>' + breweryResult[j].distance + '</ul>')
         $(selector).append('<ul>Address: ' + breweryResult[j].name.street + ', ' + breweryResult[j].name.city + ', ' + breweryResult[j].name.zip + '</ul>');
-        // $(selector).append('<ul>' + breweryResult[j].name.city + '</ul>');
-        // $(selector).append('<ul>' + breweryResult[j].name.zip + '</ul>')
         $(selector).append('<ul>Website: <a href="' + breweryResult[j].name.url + '">' + breweryResult[j].name.url + '</a></ul>');
       }
     }
