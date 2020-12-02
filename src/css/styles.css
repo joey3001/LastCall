@@ -1,7 +1,20 @@
 body {
   background-color: floralwhite;
 }
+<<<<<<< HEAD
 
 li {
   margin-top: 1%;
+=======
+#titlePage {
+  z-index: 10;
+  background-color: floralwhite;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+#submit {
+  margin: 10%;
+  width: 50%;
+>>>>>>> NZ
 }
