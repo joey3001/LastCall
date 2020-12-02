@@ -6,6 +6,8 @@
 <body>
   <h3>Brewery Finder</h3>
   <form id="breweryInput">
+    <label for="userDist">Enter the radius you want to search in miles from your address: </label>
+    <input id="userDist" type="number" required>
     <select class="form-control" id="compass" required>
       <option value="N">N</option>
       <option value="NE">NE</option>
@@ -79,5 +81,8 @@
     <input id="zip" type="text" required>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+  <ul>
+    <p id='output'></p>
+  </ul>
 </body>
 </html>
