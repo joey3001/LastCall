@@ -8,8 +8,39 @@ let userAddressLatLng = [];
 let breweryListPerState = [];
 let breweryResult = [];
 
+async function trial(breweryListPerState, stateName2, userDist,selector) {
+  for (let i = 0; i < breweryListPerState.length;) {//TODO
+  let response3 = await BreweryService.addressCoords("", breweryListPerState[i].street.replace(/ /g,"+"), breweryListPerState[i].city.replace(/ /g,"+"), stateName2, breweryListPerState[i].zip); 
+  i++; 
+    let nameDist = {
+      distance: null,
+      name: null,
+    }
+  breweryLatLng[i] = response3.results[0].locations[0].displayLatLng;
+  let dLng = (breweryLatLng[i].lng - userAddressLatLng.lng);
+  let dLat = (breweryLatLng[i].lat - userAddressLatLng.lat);
+  let distance = 69 * Math.sqrt(Math.pow(dLng, 2) + Math.pow(dLat, 2));
+  if (distance <= userDist) {
+      nameDist.distance = distance;
+      nameDist.name = breweryListPerState[i];
+      breweryResult.push(nameDist);
+    }
+    breweryResult.sort(function(a,b) {
+      return a.distance - b.distance;
+    });
+    alert(i); 
+    alert(breweryResult.length); 
+    alert(breweryListPerState.length); 
+    if(breweryResult.length === breweryListPerState.length) {
+      for (let i = 0; i < 20 ; i++) { 
+        $(selector).append(breweryResult[i].name.name);
+      }
+    }
+  } 
+}
+
 $(document).ready(function() {
-  $('#breweryInput').submit(function() {
+  $('#breweryInput').submit(async function() {
     event.preventDefault();
     let compass = $('#compass').val();
     let street = $('#street').val().replace(/ /g,"+");
@@ -20,40 +51,10 @@ $(document).ready(function() {
     let stateName2 = stateName.replace(/ /g,"+");
     let zip = $('#zip').val().replace(/ /g,"+");
     let userDist = parseInt($('#userDist').val());
-    BreweryService.addressCoords(compass, street, city, stateName2, zip)
-      .then(function(response) {
-        userAddressLatLng = response.results[0].locations[0].displayLatLng;
-        BreweryService.findBrewery(stateAbv) 
-          .then(function(response) {
-            breweryListPerState = response.filter(brewery => (brewery.status === "Brewpub" || brewery.status === "Brewery"));
-            for (let i = 0; i < 60; i++) {//TODO
-              BreweryService.addressCoords("", response[i].street.replace(/ /g,"+"), response[i].city.replace(/ /g,"+"), stateName2, response[i].zip)
-                .then(function(response) {    
-                  let nameDist = {
-                    distance: null,
-                    name: null,
-                  };
-                  breweryLatLng[i] = response.results[0].locations[0].displayLatLng;
-                  let dLng = (breweryLatLng[i].lng - userAddressLatLng.lng);
-                  let dLat = (breweryLatLng[i].lat - userAddressLatLng.lat);
-                  let distance = 69 * Math.sqrt(Math.pow(dLng, 2) + Math.pow(dLat, 2));
-                  if (distance <= userDist) {
-                    nameDist.distance = distance;
-                    nameDist.name = breweryListPerState[i];
-                    breweryResult.push(nameDist);
-                  }
-                  breweryResult.sort(function(a,b) {
-                    return a.distance - b.distance;
-                  });
-                  if (breweryResult.length === 20) { //TODO
-                    for (let i = 0; i < 20 ; i++) { 
-                      $('#output').append('<li><strong>Brewery name</strong>: ' + breweryResult[i].name.name + '</li>');
-                      $('#output').append('<ul><strong>Distance</strong>: ' + breweryResult[i].distance.toFixed(1) + '</ul>');
-                    }
-                  } 
-                });
-            }
-          });
-      });
+    let response = await BreweryService.addressCoords(compass, street, city, stateName2, zip)
+    userAddressLatLng = response.results[0].locations[0].displayLatLng;
+    let response2 = await BreweryService.findBrewery(stateAbv) 
+    breweryListPerState = response2.filter(brewery => (brewery.status === "Brewpub" || brewery.status === "Brewery"));
+    await trial(breweryListPerState, stateName2, userDist, '#output');
   });
 });
