@@ -6,16 +6,6 @@ import Beer from "../src/js/beerConstructor.js";
 import Beers from "../src/js/beers.js";
 import User from "../src/js/user.js";
 
-//creating new brewery
-//const brewery1 = new Brewery(1, Brewery1, OR);
-//const brewery2 = new Brewery(2, Brewery2, WA);
-
-//creating array with breweries
-//let breweries = new Breweries();
-//breweries.addBrewery(brewery1);
-//breweries.addBrewery(brewery2);
-//breweris=[brewery1, brewery2];
-
 const IPA = new Beer(1, "IPA", 2, 4, 1, 100);
 const Pilsner = new Beer(2, "Pilsner", 1, 3, 1, 200);
 const Hefewiezen = new Beer(3, "Hefewiezen", 2, 1, 2, 300);
@@ -33,11 +23,76 @@ beers.addBeers(BrownAle);
 beers.addBeers(Stout);
 beers.addBeers(SourBeer);
 
-//beers=[{IPA}, {Pilsner}]
 
-//color, ibu, clarity, flavor;
+//Logic for title page of quiz
 
 $(document).ready(function () {
+  $("#startQuiz").click(function () {
+    $("#titlePage").fadeOut();
+    nextQuestion();
+  });
+
+  const question = $(".form-group");
+  const nextButton = $("#next");
+  const backButton = $("#back");
+  const submitButton = $("#submit");
+  let step = 0;
+
+  function hideAll() {
+    submitButton.hide();
+    question.delay(400).fadeOut();
+    nextButton.delay(400).fadeOut();
+    backButton.delay(400).fadeOut();
+  }
+
+  function showButtons() {
+    nextButton.fadeIn();
+    backButton.fadeIn();
+  }
+
+  function showSubmitButton() {
+    submitButton.show();
+    //or can change to show questions if the user wants to review their answers
+    question.hide();
+    nextButton.hide();
+    backButton.hide();
+  }
+
+  function nextQuestion() {
+    if (step === 0) {
+      submitButton.hide();
+      question.hide();
+      backButton.hide();
+      nextButton.show();
+      $("div[value=1]").show();
+    } else if (step === 1) {
+      hideAll();
+      $("div[value=2]").delay(400).fadeIn(300);
+      showButtons();
+    } else if (step === 2) {
+      hideAll();
+      $("div[value=3]").delay(400).fadeIn(300);
+      showButtons();
+    } else if (step === 3) {
+      hideAll();
+      $("div[value=4]").delay(400).fadeIn(300);
+      showButtons();
+    } else {
+      showSubmitButton();
+    }
+  }
+
+  nextButton.click(function () {
+    step++;
+    nextQuestion();
+  });
+  backButton.click(function () {
+    step--;
+    nextQuestion();
+  });
+
+
+
   $("#quiz").submit(function (event) {
     event.preventDefault();
 
@@ -45,10 +100,6 @@ $(document).ready(function () {
     const userIbu = parseInt($("input:radio[name=ibu]:checked").val());
     const userClarity = parseInt($("input:radio[name=clarity]:checked").val());
     const userFlavor = parseInt($("input:radio[name=flavor]:checked").val());
-    console.log(userColor);
-    console.log(userIbu);
-    console.log(userClarity);
-    console.log(userFlavor);
 
     let user = new User();
     user.showBeerResult(userColor, userIbu, userClarity, userFlavor, beers);

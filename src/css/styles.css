@@ -1,3 +1,14 @@
 body {
   background-color: floralwhite;
 }
+#titlePage {
+  z-index: 10;
+  background-color: floralwhite;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+#submit {
+  margin: 10%;
+  width: 50%;
+}
