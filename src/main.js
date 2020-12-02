@@ -19,19 +19,19 @@ import User from "../src/js/user.js";
 const IPA = new Beer(1, "IPA", 2, 4, 1, 100);
 const Pilsner = new Beer(2, "Pilsner", 1, 3, 1, 200);
 const Hefewiezen = new Beer(3, "Hefewiezen", 2, 1, 2, 300);
-const PaleAle = new Beer(4, "PaleAle", 3, 2, 2, 400);
-const BrownAle = new Beer(5, "BrownAle", 4, 3, 2, 500);
+const PaleAle = new Beer(4, "Pale Ale", 3, 2, 2, 400);
+const BrownAle = new Beer(5, "Brown Ale", 4, 3, 2, 500);
 const Stout = new Beer(6, "Stout", 5, 2, 2, 600);
-const SourBeer = new Beer(7, "SourBeer", 7, 1, 2, 700);
+const SourBeer = new Beer(7, "Sour Beer", 7, 1, 2, 700);
 
 let beers = new Beers();
-beers.addBeer(IPA);
-beers.addBeer(Pilsner);
-beers.addBeer(Hefewiezen);
-beers.addBeer(PaleAle);
-beers.addBeer(BrownAle);
-beers.addBeer(Stout);
-beers.addBeer(SourBeer);
+beers.addBeers(IPA);
+beers.addBeers(Pilsner);
+beers.addBeers(Hefewiezen);
+beers.addBeers(PaleAle);
+beers.addBeers(BrownAle);
+beers.addBeers(Stout);
+beers.addBeers(SourBeer);
 
 //beers=[{IPA}, {Pilsner}]
 
@@ -40,16 +40,19 @@ beers.addBeer(SourBeer);
 $(document).ready(function () {
   $("#quiz").submit(function (event) {
     event.preventDefault();
-    console.log(IPA);
-    console.log(beers);
+
     const userColor = parseInt($("input:radio[name=color]:checked").val());
     const userIbu = parseInt($("input:radio[name=ibu]:checked").val());
     const userClarity = parseInt($("input:radio[name=clarity]:checked").val());
     const userFlavor = parseInt($("input:radio[name=flavor]:checked").val());
+    console.log(userColor);
+    console.log(userIbu);
+    console.log(userClarity);
+    console.log(userFlavor);
 
     let user = new User();
     user.showBeerResult(userColor, userIbu, userClarity, userFlavor, beers);
-    $("#result").text(`You should try ${user.beerLiked[0]}.`);
-    console.log(user.showBeerResult);
+    $("#result").text(`You should try ${user.beerLiked[0].name}.`);
+    
   });
 });

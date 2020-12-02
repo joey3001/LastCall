@@ -1,11 +1,11 @@
-import Beer from "./beerConstructor.js";
+//import Beer from "./beerConstructor.js";
 
 export default class Beers {
   constructor() {
     this.beersArray = [];
   }
 
-  addBeer() {
-    this.beersArray.push(Beer);
+  addBeers(beer) {
+    this.beersArray.push(beer);
   }
 }
