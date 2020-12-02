@@ -6,26 +6,7 @@ import Beer from "../src/js/beerConstructor.js";
 import Beers from "../src/js/beers.js";
 import User from "../src/js/user.js";
 
-const IPA = new Beer(1, "IPA", 2, 4, 1, 100);
-const Pilsner = new Beer(2, "Pilsner", 1, 3, 1, 200);
-const Hefewiezen = new Beer(3, "Hefewiezen", 2, 1, 2, 300);
-const PaleAle = new Beer(4, "Pale Ale", 3, 2, 2, 400);
-const BrownAle = new Beer(5, "Brown Ale", 4, 3, 2, 500);
-const Stout = new Beer(6, "Stout", 5, 2, 2, 600);
-const SourBeer = new Beer(7, "Sour Beer", 7, 1, 2, 700);
-
-let beers = new Beers();
-beers.addBeers(IPA);
-beers.addBeers(Pilsner);
-beers.addBeers(Hefewiezen);
-beers.addBeers(PaleAle);
-beers.addBeers(BrownAle);
-beers.addBeers(Stout);
-beers.addBeers(SourBeer);
-
-
-//Logic for title page of quiz
-
+//Logic for quiz appearence 
 $(document).ready(function () {
   $("#startQuiz").click(function () {
     $("#titlePage").fadeOut();
@@ -92,9 +73,26 @@ $(document).ready(function () {
   });
 
 
-
+  //logic for submit button
   $("#quiz").submit(function (event) {
     event.preventDefault();
+
+    const IPA = new Beer(1, "IPA", 2, 4, 1, 100);
+    const Pilsner = new Beer(2, "Pilsner", 1, 3, 1, 200);
+    const Hefewiezen = new Beer(3, "Hefewiezen", 2, 1, 2, 300);
+    const PaleAle = new Beer(4, "Pale Ale", 3, 2, 2, 400);
+    const BrownAle = new Beer(5, "Brown Ale", 4, 3, 2, 500);
+    const Stout = new Beer(6, "Stout", 5, 2, 2, 600);
+    const SourBeer = new Beer(7, "Sour Beer", 7, 1, 2, 700);
+
+    let beers = new Beers();
+    beers.addBeers(IPA);
+    beers.addBeers(Pilsner);
+    beers.addBeers(Hefewiezen);
+    beers.addBeers(PaleAle);
+    beers.addBeers(BrownAle);
+    beers.addBeers(Stout);
+    beers.addBeers(SourBeer);
 
     const userColor = parseInt($("input:radio[name=color]:checked").val());
     const userIbu = parseInt($("input:radio[name=ibu]:checked").val());
@@ -104,6 +102,5 @@ $(document).ready(function () {
     let user = new User();
     user.showBeerResult(userColor, userIbu, userClarity, userFlavor, beers);
     $("#result").text(`You should try ${user.beerLiked[0].name}.`);
-    
   });
 });
