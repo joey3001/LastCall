@@ -2,35 +2,32 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import { BreweryService } from './js/BreweryService.js';
-import breweryPost from './js/breweryPost.js';
+import { BreweryService } from '../src/js/BreweryService.js';
+import breweryPost from '../src/js/breweryPost.js';
 import Beer from "../src/js/beerConstructor.js";
 import Beers from "../src/js/beers.js";
 import User from "../src/js/user.js";
 
-$(document).ready(function() {
-  $('#breweryInput').submit(async function() {
+$(document).ready(function () {
+  $('#breweryInput').submit(async function () {
     event.preventDefault();
     let breweryListPerState = [];
     let compass = $('#compass').val();
-    let street = $('#street').val().replace(/ /g,"+");
-    let city = $('#city').val().replace(/ /g,"+");
+    let street = $('#street').val().replace(/ /g, "+");
+    let city = $('#city').val().replace(/ /g, "+");
     let stateArr = $('#state').val().split(', ');
     let stateAbv = stateArr[0];
     let stateName = stateArr[1];
-    let stateName2 = stateName.replace(/ /g,"+");
-    let zip = $('#zip').val().replace(/ /g,"+");
+    let stateName2 = stateName.replace(/ /g, "+");
+    let zip = $('#zip').val().replace(/ /g, "+");
     let userDist = parseInt($('#userDist').val());
     let response = await BreweryService.addressCoords(compass, street, city, stateName2, zip);
     let userAddressLatLng = response.results[0].locations[0].displayLatLng;
     let response2 = await BreweryService.findBrewery(stateAbv);
     breweryListPerState = response2.filter(brewery => (brewery.status === "Brewpub" || brewery.status === "Brewery"));
     breweryPost(breweryListPerState, stateName2, userDist, '#output', userAddressLatLng);
-
-
-
-//Logic for quiz appearence 
-$(document).ready(function () {
+  });
+  //Logic for quiz appearence 
   $("#startQuiz").click(function () {
     $("#titlePage").fadeOut();
     nextQuestion();
@@ -125,5 +122,6 @@ $(document).ready(function () {
     let user = new User();
     user.showBeerResult(userColor, userIbu, userClarity, userFlavor, beers);
     $("#result").text(`You should try ${user.beerLiked[0].name}.`);
-  });
+  }
+  );
 });

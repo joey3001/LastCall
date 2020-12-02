@@ -13,7 +13,7 @@ export default async function breweryPost(breweryListPerState, stateName2, userD
       street: null,
       city: null,
       zip: null,
-    }
+    };
     breweryLatLng[i] = response3.results[0].locations[0].displayLatLng;
     let dLng = (breweryLatLng[i].lng - userAddressLatLng.lng);
     let dLat = (breweryLatLng[i].lat - userAddressLatLng.lat);
@@ -26,10 +26,14 @@ export default async function breweryPost(breweryListPerState, stateName2, userD
     breweryResult.sort(function(a,b) {
       return a.distance - b.distance;
     });
+    console.log(i);
+    console.log(breweryResult);
+    console.log(breweryListPerState.length);
     if(i === breweryListPerState.length-1) {
       for (let j = 0; j < breweryResult.length ; j++) { 
+        console.log('j' + j); 
         $(selector).append('<li><strong>' + breweryResult[j].name.name + '</strong></li>');
-        $(selector).append('<ul>Distance: ' + breweryResult[j].distance.toFixed(1) + ' Miles</ul>')
+        $(selector).append('<ul>Distance: ' + breweryResult[j].distance.toFixed(1) + ' Miles</ul>');
         $(selector).append('<ul>Address: ' + breweryResult[j].name.street + ', ' + breweryResult[j].name.city + ', ' + breweryResult[j].name.zip + '</ul>');
         $(selector).append('<ul>Website: <a href="' + breweryResult[j].name.url + '">' + breweryResult[j].name.url + '</a></ul>');
       }
