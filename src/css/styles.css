@@ -1,5 +1,5 @@
-body { 
-  background-color: #008B8B 
+body {
+  background-color: #008b8b;
 }
 
 #container {
@@ -10,8 +10,8 @@ body {
   top: 0px;
 }
 
-#container div { 
-  position: absolute; 
+#container div {
+  position: absolute;
 }
 
 #top {
@@ -31,7 +31,7 @@ body {
 #liquid:after {
   background-color: rgba(255, 255, 255, 0.25);
   bottom: -10px;
-  content: '';
+  content: "";
   height: 300px;
   left: -40px;
   position: absolute;
@@ -43,13 +43,13 @@ body {
 #liquid:after {
   background-color: rgba(255, 255, 255, 0.25);
   bottom: -70px;
-  content: '';
+  content: "";
   height: 900px;
   left: -190px;
   position: absolute;
   -webkit-transform: rotate(-35deg);
   width: 900px;
-  transform: rotate(50deg); 
+  transform: rotate(50deg);
 }
 
 #liquid .bubble {
@@ -64,15 +64,17 @@ body {
 }
 
 @-webkit-keyframes bubble {
-  0% { bottom: 0; }
+  0% {
+    bottom: 0;
+  }
 
   50% {
     background-color: rgba(255, 255, 255, 0.2);
-      bottom: 80px;
+    bottom: 80px;
   }
   100% {
     background-color: rgba(255, 255, 255, 0);
-      bottom: 160px;
+    bottom: 160px;
   }
 }
 
@@ -395,22 +397,66 @@ body {
   height: 180px;
 }
 /*foam*/
-.foam-1, .foam-2, .foam-3, .foam-4, 
-.foam-5, .foam-6, .foam-7, .foam-8, 
-.foam-9, .foam-10, .foam-11, .foam-12,
-.foam-13, .foam-14, .foam-15, .foam-16,
-.foam-17, .foam-18, .foam-19, .foam-20, 
-.foam-21, .foam-22, .foam-23, .foam-24, 
-.foam-25, .foam-26, .foam-27, .foam-28, 
-.foam-29, .foam-30, .foam-31, .foam-32, 
-.foam-33, .foam-34, .foam-35, .foam-36, 
-.foam-37, .foam-38, .foam-39, .foam-40, 
-.foam-41, .foam-42, .foam-43, .foam-44, 
-.foam-45, .foam-46, .foam-47, .foam-48, 
-.foam-49, .foam-50, .foam-51, .foam-52, 
-.foam-53, .foam-54, .foam-55, .foam-56, 
-.foam-57, .foam-58, .foam-59, .foam-60
-{ 
+.foam-1,
+.foam-2,
+.foam-3,
+.foam-4,
+.foam-5,
+.foam-6,
+.foam-7,
+.foam-8,
+.foam-9,
+.foam-10,
+.foam-11,
+.foam-12,
+.foam-13,
+.foam-14,
+.foam-15,
+.foam-16,
+.foam-17,
+.foam-18,
+.foam-19,
+.foam-20,
+.foam-21,
+.foam-22,
+.foam-23,
+.foam-24,
+.foam-25,
+.foam-26,
+.foam-27,
+.foam-28,
+.foam-29,
+.foam-30,
+.foam-31,
+.foam-32,
+.foam-33,
+.foam-34,
+.foam-35,
+.foam-36,
+.foam-37,
+.foam-38,
+.foam-39,
+.foam-40,
+.foam-41,
+.foam-42,
+.foam-43,
+.foam-44,
+.foam-45,
+.foam-46,
+.foam-47,
+.foam-48,
+.foam-49,
+.foam-50,
+.foam-51,
+.foam-52,
+.foam-53,
+.foam-54,
+.foam-55,
+.foam-56,
+.foam-57,
+.foam-58,
+.foam-59,
+.foam-60 {
   float: left;
   position: absolute;
   z-index: 999;
@@ -425,23 +471,23 @@ body {
 }
 .foam-2 {
   top: -35px;
-  left: 20px; 
+  left: 20px;
 }
 .foam-3 {
   top: -25px;
-  left: 50px; 
+  left: 50px;
 }
 .foam-4 {
   top: -35px;
-  left: 80px; 
+  left: 80px;
 }
 .foam-5 {
   top: -30px;
-  left: 110px; 
+  left: 110px;
 }
 .foam-6 {
   top: -20px;
-  left: 140px; 
+  left: 140px;
 }
 .foam-7 {
   top: -30px;
@@ -453,23 +499,23 @@ body {
 }
 .foam-9 {
   top: -35px;
-  left: 170px; 
+  left: 170px;
 }
 .foam-10 {
   top: -25px;
-  left: 210px; 
+  left: 210px;
 }
 .foam-11 {
   top: -35px;
-  left: 250px; 
+  left: 250px;
 }
 .foam-12 {
   top: -30px;
-  left: 270px; 
+  left: 270px;
 }
 .foam-13 {
   top: -20px;
-  left: 300px; 
+  left: 300px;
 }
 .foam-14 {
   top: -30px;
@@ -485,23 +531,23 @@ body {
 }
 .foam-17 {
   top: -35px;
-  left: 420px; 
+  left: 420px;
 }
 .foam-18 {
   top: -25px;
-  left: 450px; 
+  left: 450px;
 }
 .foam-19 {
   top: -40px;
-  left: 460px; 
+  left: 460px;
 }
 .foam-20 {
   top: -20px;
-  left: 470px; 
+  left: 470px;
 }
 .foam-21 {
   top: -30px;
-  left: 510px; 
+  left: 510px;
 }
 .foam-22 {
   top: -20px;
@@ -513,23 +559,23 @@ body {
 }
 .foam-24 {
   top: -35px;
-  left: 570px; 
+  left: 570px;
 }
 .foam-25 {
   top: -25px;
-  left: 600px; 
+  left: 600px;
 }
 .foam-26 {
   top: -35px;
-  left: 620px; 
+  left: 620px;
 }
 .foam-27 {
   top: -30px;
-  left: 640px; 
+  left: 640px;
 }
 .foam-28 {
   top: -20px;
-  left: 670px; 
+  left: 670px;
 }
 .foam-29 {
   top: -25px;
@@ -538,30 +584,30 @@ body {
 .foam-30 {
   top: -40px;
   left: 715px;
-} 
+}
 .foam-31 {
   top: -30px;
   left: 730px;
 }
 .foam-32 {
   top: -35px;
-  left: 750px; 
+  left: 750px;
 }
 .foam-33 {
   top: -25px;
-  left: 780px; 
+  left: 780px;
 }
 .foam-34 {
   top: -35px;
-  left: 800px; 
+  left: 800px;
 }
 .foam-35 {
   top: -20px;
-  left: 820px; 
+  left: 820px;
 }
 .foam-36 {
   top: -25px;
-  left: 840px; 
+  left: 840px;
 }
 .foam-37 {
   top: -30px;
@@ -573,11 +619,11 @@ body {
 }
 .foam-39 {
   top: -40px;
-  left: 900px; 
+  left: 900px;
 }
 .foam-40 {
   top: -25px;
-  left: 930px; 
+  left: 930px;
 }
 .foam-41 {
   top: -30px;
@@ -585,23 +631,23 @@ body {
 }
 .foam-42 {
   top: -35px;
-  left: 970px; 
+  left: 970px;
 }
 .foam-43 {
   top: -25px;
-  left: 990px; 
+  left: 990px;
 }
 .foam-44 {
   top: -35px;
-  left: 1000px; 
+  left: 1000px;
 }
 .foam-45 {
   top: -30px;
-  left: 1030px; 
+  left: 1030px;
 }
 .foam-46 {
   top: -20px;
-  left: 1050px; 
+  left: 1050px;
 }
 .foam-47 {
   top: -30px;
@@ -609,15 +655,15 @@ body {
 }
 .foam-48 {
   top: -35px;
-  left: 1110px; 
+  left: 1110px;
 }
 .foam-49 {
   top: -25px;
-  left: 1140px; 
+  left: 1140px;
 }
 .foam-50 {
   top: -35px;
-  left: 1180px; 
+  left: 1180px;
 }
 .foam-51 {
   top: -30px;
@@ -625,23 +671,23 @@ body {
 }
 .foam-52 {
   top: -35px;
-  left: 1230px; 
+  left: 1230px;
 }
 .foam-53 {
   top: -25px;
-  left: 1265px; 
+  left: 1265px;
 }
 .foam-54 {
   top: -35px;
-  left: 1280px; 
+  left: 1280px;
 }
 .foam-55 {
   top: -30px;
-  left: 1310px; 
+  left: 1310px;
 }
 .foam-56 {
   top: -20px;
-  left: 1330px; 
+  left: 1330px;
 }
 .foam-57 {
   top: -30px;
@@ -653,19 +699,20 @@ body {
 }
 .foam-59 {
   top: -35px;
-  left: 1400px; 
+  left: 1400px;
 }
 .foam-60 {
   top: -25px;
-  left: 1420px; 
+  left: 1420px;
 }
 
 /* MP3 */
-#mp3, #mp31 {
-margin-left: 12in;
-margin-top: 0.1in;
-width: 1.7in;
-} 
+#mp3,
+#mp31 {
+  margin-left: 12in;
+  margin-top: 0.1in;
+  width: 1.7in;
+}
 
 /* AGE VERIFICATION */
 .btn {
@@ -686,7 +733,7 @@ width: 1.7in;
 
 /* FONTS */
 #h1 {
-  color:#fff;
+  color: #fff;
   position: absolute;
   margin-left: 2em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -695,7 +742,7 @@ width: 1.7in;
   font-weight: bolder;
 }
 h1 {
-  color:#fff;
+  color: #fff;
   position: absolute;
   margin-left: 2em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -732,6 +779,10 @@ p {
   color: white;
 }
 
+.dir2 {
+  margin-top: 43px;
+}
+
 .btn {
   font-weight: 600;
   letter-spacing: 0.3em;
@@ -756,8 +807,7 @@ p {
   background-color: #f2c025;
   color: black;
   transition: 0.5s;
-} 
-
+}
 
 /* HISTRY COLUMNS */
 .column1 {
@@ -1158,17 +1208,42 @@ select.form-control {
 }
 
 #titlePage {
-  z-index: 10;
-  background-color:#008B8B ;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+  text-align: center;
+  color: white;
+}
+.radio {
+  text-align: left;
+  margin-left: 45%;
+}
+.form-group {
+  text-align: center;
 }
 
-#submit {
-  margin: 10%;
-  width: 50%;
+.submitControl {
+  text-align: center;
 }
+
+div[value="1"],
+div[value="2"],
+div[value="3"],
+div[value="4"],
+#submit,
+#back,
+#next {
+  display: none;
+  text-align: center;
+}
+
+.controls {
+  text-align: center;
+}
+#result {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  text-shadow: 5px 5px #007272;
+}
+/*Styling for quiz end*/
 
 .brewery {
   width: 800px;
@@ -1198,3 +1273,4 @@ select.form-control {
 #breweryInput input {
   width: 2.5in;
 }
+s

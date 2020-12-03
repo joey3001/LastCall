@@ -1,46 +1,51 @@
-import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/styles.css';
-import { BreweryService } from '../src/js/BreweryService.js';
-import breweryPost from '../src/js/breweryPost.js';
+import $ from "jquery";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/styles.css";
+import { BreweryService } from "../src/js/BreweryService.js";
+import breweryPost from "../src/js/breweryPost.js";
 import Beer from "../src/js/beerConstructor.js";
 import Beers from "../src/js/beers.js";
 import User from "../src/js/user.js";
 
 $(document).ready(function () {
-
-  //$('.box').show();
-  // $('.btn-yes').click(function() {
-  //   $('.box').hide();
-  //   $('.dir').show();
-  //   $('.column6').show();
-  //   $('#mp3').show();
-  // });
-  $('.btn-no').click(function() {
-    window.location.href = 'http://google.com/';
+  $(".btn-no").click(function () {
+    window.location.href = "http://google.com/";
   });
 
-
-  $('#breweryInput').submit(async function () {
+  $("#breweryInput").submit(async function () {
     event.preventDefault();
     let breweryListPerState = [];
     // let compass = $('#compass').val();
-    let street = $('#street').val().replace(/ /g, "+");
-    let city = $('#city').val().replace(/ /g, "+");
-    let stateArr = $('#state').val().split(', ');
+    let street = $("#street").val().replace(/ /g, "+");
+    let city = $("#city").val().replace(/ /g, "+");
+    let stateArr = $("#state").val().split(", ");
     let stateAbv = stateArr[0];
     let stateName = stateArr[1];
     let stateName2 = stateName.replace(/ /g, "+");
-    let zip = $('#zip').val().replace(/ /g, "+");
-    let userDist = parseInt($('#userDist').val());
-    let response = await BreweryService.addressCoords(/*compass*/ "", street, city, stateName2, zip);
+    let zip = $("#zip").val().replace(/ /g, "+");
+    let userDist = parseInt($("#userDist").val());
+    let response = await BreweryService.addressCoords(
+      /*compass*/ "",
+      street,
+      city,
+      stateName2,
+      zip
+    );
     let userAddressLatLng = response.results[0].locations[0].displayLatLng;
     let response2 = await BreweryService.findBrewery(stateAbv);
-    breweryListPerState = response2.filter(brewery => (brewery.status === "Brewpub" || brewery.status === "Brewery"));
-    breweryPost(breweryListPerState, stateName2, userDist, '#output', userAddressLatLng);
+    breweryListPerState = response2.filter(
+      (brewery) => brewery.status === "Brewpub" || brewery.status === "Brewery"
+    );
+    breweryPost(
+      breweryListPerState,
+      stateName2,
+      userDist,
+      "#output",
+      userAddressLatLng
+    );
   });
-  //Logic for quiz appearence 
+  //Logic for quiz appearence
   $("#startQuiz").click(function () {
     $("#titlePage").fadeOut();
     nextQuestion();
@@ -90,8 +95,6 @@ $(document).ready(function () {
     } else if (step === 3) {
       hideAll();
       $("div[value=4]").delay(400).fadeIn(300);
-      showButtons();
-    } else {
       showSubmitButton();
     }
   }
@@ -105,11 +108,10 @@ $(document).ready(function () {
     nextQuestion();
   });
 
-
   //logic for submit button
   $("#quiz").submit(function (event) {
     event.preventDefault();
-
+    hideAll();
     const IPA = new Beer(1, "IPA", 2, 4, 1, 100);
     const Pilsner = new Beer(2, "Pilsner", 1, 3, 1, 200);
     const Hefewiezen = new Beer(3, "Hefewiezen", 2, 1, 2, 300);
@@ -135,6 +137,5 @@ $(document).ready(function () {
     let user = new User();
     user.showBeerResult(userColor, userIbu, userClarity, userFlavor, beers);
     $("#result").text(`You should try ${user.beerLiked[0].name}.`);
-  }
-  );
+  });
 });
