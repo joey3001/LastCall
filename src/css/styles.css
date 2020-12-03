@@ -59,8 +59,8 @@ body {
   background-color: rgba(255, 254, 239, 0.2);
   bottom: 0;
   border-radius: 10px;
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
 }
 
 @-webkit-keyframes bubble {
@@ -771,8 +771,7 @@ p {
 }
 
 /*buttons*/
-.dir,
-.dir1 {
+.dir {
   margin-top: -1cm;
 }
 
@@ -791,13 +790,11 @@ p {
   margin: 1em auto;
   display: block;
 }
-.dir ul,
-.dir1 ul {
+.dir ul {
   float: left;
   list-style-type: none;
   margin-right: 1cm;
 }
-.dir1 li,
 .dir li {
   margin: 0.3cm;
   border: 0.1px solid black;
@@ -806,14 +803,13 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-.dir li:hover,
-.dir1 li:hover {
+.dir li:hover {
   background-color: #f2c025;
   color: black;
   transition: 0.5s;
 }
 
-/* HISTRY COLUMNS */
+/* HISTORY COLUMNS */
 .column1 {
   margin-left: auto;
   margin-right: auto;
@@ -884,7 +880,11 @@ p {
   background-color: transparent;
   border-width: 5px;
   width: 700px;
-  height: 500px;
+  height: 700px;
+}
+.column6 p {
+  margin-top: 0.4in;
+  font-size: x-large;
 }
 
 .bubble61 {
@@ -1255,7 +1255,9 @@ div[value="4"],
   overflow: hidden;
   position: relative;
   top: 0px;
-  padding: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 60px;
 }
 
 .output {
@@ -1264,7 +1266,7 @@ div[value="4"],
   overflow: hidden;
   position: relative;
   margin-top: 0px;
-  padding: 80px;
+  padding-left: 80px;
 }
 
 .form-control#state {

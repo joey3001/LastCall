@@ -26,22 +26,34 @@ _Visit [Last Call webpage](https://joey3001.github.io/LastCall/) at https://joey
 2. _Click on the green button labeled "Code"_ to copy repository URL.
 3. _Clone the repository to your local machine_ by opening your machine terminal and using the command "git clone https://github.com/joey3001/LastCall".
 4. _Create API Keys (see instruction below)_
-5. _Place your tokens in an .env file at the top level of your directory. Name your API key variables API_KEY1 and API_KEY2 in .env. Keep spelling and capitalization identical.(e.g. API_KEY1=[your API Key])_ TODO!!!!!!
+5. _Place your tokens in an .env file at the top level of your directory. Name your API key variables API_KEY and API_KEY2 in .env. Keep spelling and capitalization identical as shown below: 
+
+            e.g. API_KEY=your API Key
+
 6. Include .env in .gitignore file.
 
 ### <span style="color:#c4f4ef">Creating API Key</span>
 
-_To use this application, you will need to make two accounts and get an API keys. The "Free Plan" allows for TODO API calls per month._
+_To use this application, you will need to make two accounts and get an API keys. The "Free Plan" for the mapquest API allows for 1500 API calls per month. The Beer Mapping API is does not limit the number of API calls you can make with their "Free Plan."_ 
 
-1. _Visit the [TODO site](https://TODO/). Input your email address and click the "TODO" button._
-2. _You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "TODO"_
-3. _At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month._
-4. Visit ...TODO
+1. __Visit the [Beer Mapping API Site](https://beermapping.com/api/). Click on the "Sign Up" Button and create an account._
+2. _At this point, you'll be able to access a dashboard that includes your API key._
+3. Set your beer mapping API key to a variable name "API_KEY" in  your .env file as shown below: 
+
+            API_KEY=12312312jlsfajsdiofjo
+
+4. _Visit the [Mapquest API Site](https://developer.mapquest.com/). Click on the "Get your Free API Key" Button and create an account._
+5. _At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month._
+6. Set your mapquest API key to a variable name "API_KEY2" in  your .env file as shown below: 
+
+            API_KEY2=fdagaddga123123sfajsdiofjo
 
 ## <span style="color:#0ec2b8">Known Bugs</span>
 
-_Location page doesn't show information about breweries in WA, FL, ... TODO_
-_This bag was issued to API developers_
+_Location page doesn't show information about breweries in WA, FL, due to broken API Endpoints_
+_This bag was made known to the API developers_
+
+_Links to brewery webpages attempt to open the url address locally_ 
 
 ## <span style="color:#0ec2b8">Support and contact details</span>
 
