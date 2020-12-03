@@ -129,6 +129,7 @@ $(document).ready(function () {
     beers.addBeers(Stout);
     beers.addBeers(SourBeer);
 
+
     const userColor = parseInt($("input:radio[name=color]:checked").val());
     const userIbu = parseInt($("input:radio[name=ibu]:checked").val());
     const userClarity = parseInt($("input:radio[name=clarity]:checked").val());
@@ -136,6 +137,12 @@ $(document).ready(function () {
 
     let user = new User();
     user.showBeerResult(userColor, userIbu, userClarity, userFlavor, beers);
-    $("#result").text(`You should try ${user.beerLiked[0].name}.`);
+    
+    if (user.beersLiked.length >0) {
+      $("ul#result").text(`You could try:`);
+      for (let i = 0; i < user.beersLiked.length; i++) {
+        $("ul#result").append(`<li>${user.beersLiked[i].name}</li>`);
+      }
+    } else $("#resultError").text('Sorry, we dont have beer to offer. Try again.');
   });
 });

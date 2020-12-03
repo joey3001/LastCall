@@ -1241,10 +1241,27 @@ div[value="4"],
 .controls {
   text-align: center;
 }
-#result {
-  text-align: center;
+
+ul#result {
+  text-align: left;
   color: white;
-  font-size: 100px;
+  font-size: 70px;
+  text-shadow: 5px 5px #007272;
+}
+
+ul#result li{
+  text-align: left;
+  vertical-align: middle;
+  color: white;
+  font-size: 50px;
+  text-shadow: 5px 5px #007272;
+  text-indent: 20px;
+}
+
+#resultError{
+  text-align: left;
+  color: white;
+  font-size: 70px;
   text-shadow: 5px 5px #007272;
 }
 /*Styling for quiz end*/
