@@ -1,64 +1,72 @@
-### Beer Quiz Questions
+# <span style="color:#0ec2b8">_Last Call_</span>
 
-1. Beer color:
+#### _Last Call website, 12/03/2020_
 
-- pale, straw, pee color (lightest)
-- golden
-- amber
-- brown
-- any
-- black (darkest)
+#### By _**Eric Endsley, Agata Kolodziej, Joseph Nero, Constantine Yakubovski, Nataliya Zhuravleva**_
 
-or
+## <span style="color:#0ec2b8">Description</span>
 
-- light
-- amber
-- dark
+_The Last Call website helps people to know more about beer, suggests beer that user should try, and finds breweries nearby. <br>
+The website contains the next pages:_
 
-2. IBU/Bitterness:
+1. _Age verification_ - It checks the user age. User must be 21 years or older.
+2. _Beer 101_ - This is informational page about beer history, how beer is made, ingredients, key beer terms, types of beer.
+3. _Location_ - Location page helps the user to find breweries neaby.
+4. _Quiz_ - Quiz page processes the user responses and suggests beer the user should try.
 
-- not bitter
-- bitter
+## <span style="color:#0ec2b8">Setup/Installation Requirements</span>
 
-3. Flavor: // probably question number two
+### <span style="color:#c4f4ef">View Online</span>
 
-- mild flavor
-  - white bread
-- sweet
-  - chocolatey
-  - caramel
-  - fruity
-    - citrus
-    - banana
-    - berry
-    - tropical
-  - sour
-- bitter
-  - piney
-  - coffee
+_Visit [Last Call webpage](https://joey3001.github.io/LastCall/) at https://joey3001.github.io/LastCall/_ to view application on GitHub pages.\_
 
-4. ABV
+### <span style="color:#c4f4ef">Open Locally</span>
 
-- 0-5%
-- 5-7%
-- 10+%
+1. _Navigate to the [Last Call repo](https://github.com/joey3001/LastCall) at https://github.com/joey3001/LastCall_ to view the project files and commits.
+2. _Click on the green button labeled "Code"_ to copy repository URL.
+3. _Clone the repository to your local machine_ by opening your machine terminal and using the command "git clone https://github.com/joey3001/LastCall".
+4. _Create API Keys (see instruction below)_
+5. _Place your tokens in an .env file at the top level of your directory. Name your API key variables API_KEY1 and API_KEY2 in .env. Keep spelling and capitalization identical.(e.g. API_KEY1=[your API Key])_ TODO!!!!!!
+6. Include .env in .gitignore file.
 
-6. Gluten free? Do you like beer? // probably first question
+### <span style="color:#c4f4ef">Creating API Key</span>
 
-- yes i love beer == move on to flavor question
-- no, i prefer cider == result should only suggest cider
-- yes, but i am gluten intolerant == result should only suggest gluten free beer
+_To use this application, you will need to make two accounts and get an API keys. The "Free Plan" allows for TODO API calls per month._
 
-7. What type of beer do you normally drink?
+1. _Visit the [TODO site](https://TODO/). Input your email address and click the "TODO" button._
+2. _You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "TODO"_
+3. _At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for the month._
+4. Visit ...TODO
 
-- heineken
-- corona
-- guinness
-- American example: bud, coorslight
-- Craft example: ipas, sours
-- Belgian/wheatbeer
+## <span style="color:#0ec2b8">Known Bugs</span>
 
-- Results
+_Location page doesn't show information about breweries in WA, FL, ... TODO_
+_This bag was issued to API developers_
+
+## <span style="color:#0ec2b8">Support and contact details</span>
+
+_If you have any questions, ideas or concerns, please, contact us by email:_ <br>
+Eric Endsley at [eric.endsley4@gmail.com](mailto:eric.endsley4@gmail.com)<br>
+Agata Kolodziej at [agatakolohe@gmail.com](mailto:agatakolohe@gmail.com)<br>
+Joseph Nero at [josephnero111@gmail.com](mailto:josephnero111@gmail.com)<br>
+Constantine Yakubovski at [faustlarsen@gmail.com](mailto:faustlarsen@gmail.com)<br>
+Nataliya Zhuravleva at [natalindria@gmail.com](mailto:natalindria@gmail.com)
+
+## <span style="color:#0ec2b8">Technologies Used</span>
+
+- _VisualStudio Code_
+- _Git_
+- _GitHub_
+- _HTML/CSS/Bootstrap_
+- _JavaScript/jQuery_
+- _API_
+- _Webpack_
+- _Node_
+- _Npm_
+- _ESLint_
+- _Jest_
+
+### <span style="color:#0ec2b8">Beer Quiz Specs for Developer Using</span>
 
 - Beer options:
   - IPAs: color:golden/amber(2,3), IBU: 50-70(4), ABV: 6-10%, Clarity: clear(1), Flavor: Hoppy, citrus, pine, danky(100)
@@ -69,40 +77,8 @@ or
   - Stouts; color: black(5), IBU: 10-20(2), ABV: 4-5%, Clarity: both(1,2), Flavor: strong roasted malt, coffee, dark chocolate(600)
   - Sours color: red(6), IBU: 0-10, ABV: 3-5%(1), Clarity: Can be hazy(1,2), Flavor: sour, tart, acidic(700)
 
-# Last Call
+### <span style="color:#0ec2b8">License</span>
 
-####
+_This software is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license_
 
-#### By
-
-### Description
-
-## Setup/Installation Requirements
-
-#### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com
-
-#### Software requirements
-
-#### To view this website online please use the following GH-Pages link:
-
-#### Please follow these instructions to sign up for a free API key. This is neccesary for you to run the project.
-
-#### Please follow these instructions to clone this project using git commands in the terminal.
-
-#### Follow these instructions to use npm to install the project's required packages, enter your API key, and open the project in your default browser.
-
-#### Follow these instructions to view the code in the VSCode editor using commands in the terminal.
-
-#### To download a file containing the contents of this repository to a location of your choice, please follow these instructions.
-
-## Known Bugs
-
-## Support and contact details
-
-## Technologies Used
-
-### License
-
-[MIT License](https://choosealicense.com/licenses/mit/)
-
-Copyright (c) 2020 Joseph Nero
+Copyright (c) 2020 **_Eric Endsley, Agata Kolodziej, Joseph Nero, Constantine Yakubovski, Nataliya Zhuravleva_**
