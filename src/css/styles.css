@@ -771,7 +771,8 @@ p {
 }
 
 /*buttons*/
-.dir, .dir1 {
+.dir,
+.dir1 {
   margin-top: -1cm;
 }
 
@@ -790,12 +791,14 @@ p {
   margin: 1em auto;
   display: block;
 }
-.dir ul, .dir1 ul {
+.dir ul,
+.dir1 ul {
   float: left;
   list-style-type: none;
   margin-right: 1cm;
 }
-.dir1 li, .dir li  {
+.dir1 li,
+.dir li {
   margin: 0.3cm;
   border: 0.1px solid black;
   padding: 2px 20px 1px;
@@ -803,7 +806,8 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-.dir li:hover, .dir1 li:hover {
+.dir li:hover,
+.dir1 li:hover {
   background-color: #f2c025;
   color: black;
   transition: 0.5s;
@@ -1200,7 +1204,7 @@ li {
 }
 
 select.form-control {
-  display:inline-block;
+  display: inline-block;
 }
 
 .brewery h3 {
@@ -1269,8 +1273,6 @@ div[value="4"],
   width: 2.5in;
 }
 
-
 #breweryInput input {
   width: 2.5in;
 }
-s
