@@ -707,8 +707,8 @@ body {
 }
 
 /* MP3 */
-#mp3,
-#mp31 {
+#mp3 {
+  opacity: 0;
   margin-left: 12in;
   margin-top: 0.1in;
   width: 1.7in;
@@ -1260,11 +1260,9 @@ div[value="4"],
 
 .output {
   width: 800px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 0px;
   padding: 80px;
 }
