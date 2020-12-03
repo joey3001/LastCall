@@ -178,8 +178,8 @@
         <ul>
           <li><a href="titlepage.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >HOME</a></li>
           <li><a href="history.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >BEER 101</a></li>
-          <li><a href="location.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >LOCATION</a></li>
-          <li><a href="quiz.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >QUIZ</a></li>
+          <li><a href="location.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >FIND BEER</a></li>
+          <li><a href="quiz.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >BEER QUIZ</a></li>
         </ul>
       </div>
     </div>
@@ -191,9 +191,9 @@
     <h3>Brewery Finder</h3>
     <form id="breweryInput">
       <input id="userDist" type="number" required>
-      <label for="userDist">Enter the radius you want to search in miles from your address: </label>
+      <label for="userDist">Enter your search radius in miles</label>
       <br>
-      <select class="form-control" id="compass" required>
+      <!-- <select class="form-control" id="compass" required>
         <option value="N">N</option>
         <option value="NE">NE</option>
         <option value="E">E</option>
@@ -203,7 +203,7 @@
         <option value="W">W</option>
         <option value="NW">NW</option>
         <option value="">None</option>
-      </select> 
+      </select>  -->
       <input id="street" type="text" required>
       <label for="street">Enter your street address</label>
       <br>
@@ -264,14 +264,17 @@
         <option value="wi, Wisconsin">Wisconsin</option>
         <option value="wy, Wyoming">Wyoming</option>
       </select>
+      <label for="state">Select your state</label>
       <br>
       <input id="zip" type="text" required>
-      <label for="zip">Enter your zip</label>
+      <label for="zip">Enter your zip</label><br>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
-  <ul>
-    <p id='output'></p>
-  </ul>
+  <div class="output">
+    <ul>
+      <p id='output'></p>
+    </ul>
+  </div>
 </body>
 </html>

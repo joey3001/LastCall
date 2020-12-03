@@ -719,9 +719,17 @@ p {
   color: #fff;
 }
 
+#breweryInput label {
+  color: #fff;
+}
+
 /*buttons*/
 .dir, .dir1 {
-  margin-top: -0.5in;
+  margin-top: -1cm;
+}
+
+.output a:link {
+  color: white;
 }
 
 .btn {
@@ -731,21 +739,21 @@ p {
   margin: 1em auto;
   display: block;
 }
-ul {
+.dir ul, .dir1 ul {
   float: left;
   list-style-type: none;
   margin-right: 1cm;
 }
-li {
+.dir1 li, .dir li  {
   margin: 0.3cm;
-  /* border: 0.1px solid black; */
+  border: 0.1px solid black;
   padding: 2px 20px 1px;
   border-radius: 1cm;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-li:hover {
-  /* background-color: #f2c025; */
+.dir li:hover, .dir1 li:hover {
+  background-color: #f2c025;
   color: black;
   transition: 0.5s;
 } 
@@ -1141,6 +1149,14 @@ li {
   margin-top: 1%;
 }
 
+select.form-control {
+  display:inline-block;
+}
+
+.brewery h3 {
+  text-align: center;
+}
+
 #titlePage {
   z-index: 10;
   background-color:#008B8B ;
@@ -1155,14 +1171,30 @@ li {
 }
 
 .brewery {
-
   width: 800px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
   top: 0px;
+  padding: 100px;
 }
 
-.form-control {
-  width: 4in;
+.output {
+  width: 800px;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding: 80px;
+}
+
+.form-control#state {
+  width: 2.5in;
+}
+
+
+#breweryInput input {
+  width: 2.5in;
 }

@@ -29,9 +29,10 @@ export default async function breweryPost(breweryListPerState, stateName2, userD
     console.log(i);
     console.log(breweryResult);
     console.log(breweryListPerState.length);
+    $(selector).text("")
     if(i === breweryListPerState.length-1) {
       for (let j = 0; j < breweryResult.length ; j++) { 
-        console.log('j' + j); 
+        console.log('j' + j);
         $(selector).append('<li><strong>' + breweryResult[j].name.name + '</strong></li>');
         $(selector).append('<ul>Distance: ' + breweryResult[j].distance.toFixed(1) + ' Miles</ul>');
         $(selector).append('<ul>Address: ' + breweryResult[j].name.street + ', ' + breweryResult[j].name.city + ', ' + breweryResult[j].name.zip + '</ul>');
