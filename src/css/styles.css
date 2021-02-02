@@ -1525,7 +1525,7 @@ ul#result li{
 }
 
 .postTop {
-  padding-top: 15px; 
+  padding-top: 20px; 
   font-family: monospace; 
   list-style-type: none;
   padding-left: 3%; 
@@ -1547,7 +1547,8 @@ ul#result li{
   margin: auto; 
   margin-top: 28PX;  
   width: 40%; 
-  border-bottom: 1px solid rgb(212, 174, 174); 
+  border-bottom: 1px solid rgb(212, 174, 174);
+  line-height: 1em; 
 }
 
 #output {

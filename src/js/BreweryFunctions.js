@@ -57,14 +57,14 @@ export default class BreweryFunctions {
   }
 
   //Posts to the DOM breweries within the user's specified search Radius & sorted from least to most distant from the user's address. 
-  // static breweryPost(sortedBreweriesByDistance, selector) {
+  static breweryPost(sortedBreweriesByDistance, selector) {
 
-  //   $(selector).text("");
-  //   for (let i = 0; i < sortedBreweriesByDistance.length ; i++) {
-  //     $(selector).append('<li class=' + 'postTop' + '>' + sortedBreweriesByDistance[i].name.name + '</li>');
-  //     $(selector).append('<ul class=' + 'post' + '>Distance: ' + sortedBreweriesByDistance[i].distance.toFixed(1) + ' Miles</ul>');
-  //     $(selector).append('<ul class=' + 'post' + '>Address: ' + sortedBreweriesByDistance[i].name.street + ', ' + sortedBreweriesByDistance[i].name.city + ', ' + sortedBreweriesByDistance[i].name.zip + '</ul>');
-  //     $(selector).append('<ul class=' + 'postBottom' + '>Website: <a href=https://www.' + sortedBreweriesByDistance[i].name.url.toString() + '>' + sortedBreweriesByDistance[i].name.url + '</a></ul>');
-  //   }
-  //}
+    $(selector).text("");
+    for (let i = 0; i < sortedBreweriesByDistance.length ; i++) {
+      $(selector).append('<li class=' + 'postTop' + '>' + sortedBreweriesByDistance[i].name.name + '</li>');
+      $(selector).append('<ul class=' + 'post' + '>Distance: ' + sortedBreweriesByDistance[i].distance.toFixed(1) + ' Miles</ul>');
+      $(selector).append('<ul class=' + 'post' + '>Address: ' + sortedBreweriesByDistance[i].name.street + ', ' + sortedBreweriesByDistance[i].name.city + ', ' + sortedBreweriesByDistance[i].name.zip + '</ul>');
+      $(selector).append('<ul class=' + 'postBottom' + '>Website: <a href=https://www.' + sortedBreweriesByDistance[i].name.url.toString() + '>' + sortedBreweriesByDistance[i].name.url + '</a></ul>');
+    }
+  }
 }

@@ -36,7 +36,7 @@ $(document).ready(function () {
     const filteredBreweriesByDistance = await BreweryFunctions.breweryDistanceFilter(breweryListByState, userAddressLatLng, stateName, searchRadius); 
     const sortedBreweriesByDistance = BreweryFunctions.breweryDistanceSorter(filteredBreweriesByDistance); 
 
-    //BreweryFunctions.breweryPost(sortedBreweriesByDistance, "#output"); 
+    BreweryFunctions.breweryPost(sortedBreweriesByDistance, "#output"); 
   });
 
 
