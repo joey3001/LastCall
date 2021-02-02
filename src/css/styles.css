@@ -925,6 +925,7 @@ body {
 .btn.btn-no {
   background-color: rgb(150, 23, 23);
 }
+
 .box-center {
   margin: 0 auto;
   width: 40%;
@@ -935,24 +936,15 @@ body {
 }
 
 /* FONTS */
-#h1 {
-  color: #fff;
-  position: absolute;
-  margin-left: 2em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 7em;
-  padding-top: 20px;
-  font-weight: bolder;
-}
 
 h1 {
   color: #fff;
   position: static;
   display: block; 
-  margin-left: 3em;  
+  margin-left: 20%;  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 450%;
-  padding-top: 40px;
+  padding-top: 44px;
   font-weight: bolder;
 }
 
@@ -960,12 +952,12 @@ h3 {
   color: black;
   border-bottom: 1px solid rgb(212, 174, 174); 
   width: 25%; 
-  padding-top: 4%;
-  padding-bottom: 1.5%; 
+  padding-top: 35px;
+  padding-bottom: 10px; 
   margin: auto; 
   font-family: monospace;
   font-weight: bold; 
-  margin-bottom: 1%;
+  margin-bottom: 9px; 
 }
 
 h2 {
@@ -979,6 +971,10 @@ p {
   color: black;
 }
 
+#breweryInput {
+  padding-top: 2px; 
+}
+
 #breweryInput label {
   color: black;
   text-align: left; 
@@ -987,43 +983,39 @@ p {
 }
 
 /*buttons*/
+
+.btn {
+  padding: 10px 20px; 
+  margin: auto;
+  display: block;
+  margin-top: 3%; 
+  font-size: 120%; 
+  font-family: monospace; 
+  font-weight: bold;
+  background-color: #f2c025;
+}
+
 .menuButtons {
   margin-top: 20px;
 }
 
-.output a:link {
-  color: black; 
-}
-
-.dir2 {
-  margin-top: 43px;
-}
-
-.btn {
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  padding: 0.9em 1em 0.7em;
-  margin: 1em auto;
-  display: block;
-}
 .menuButtons ul {
-  float: left;
   list-style-type: none;
-  margin-right: 1cm;
 }
 
 .menuButtons li {
   margin: 0.3cm;
-  border: 0.1px solid black;
-  padding: 2px 20px 1px;
-  border-radius: 1cm;
+  margin-left: 26px;
+  border: 1px solid rgb(201, 164, 164);
+  padding: 2px 20px;
+  border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-weight: 540; 
 }
 
 .menuButtons li:hover {
-  background-color: #f2c025;
-  color: black;
+  background-color: #f2c025; 
   transition: 0.5s;
 }
 
@@ -1498,15 +1490,6 @@ ul#result li{
   background-color: rgb(243, 243, 243)
 }
 
-#output {
-  width: 800px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  margin-top: 30px;
-  padding-left: 80px;
-}
-
 .form-control#state {
   display: block; 
   margin: auto;  
@@ -1532,13 +1515,47 @@ ul#result li{
   margin: 0 auto;
 }
 
-.btn {
-  display: block;
-  margin: auto;
-  margin-top: 3%; 
-  font-family:Arial, Helvetica, sans-serif; 
-  font-size: 100%;
-  font-weight: bold;
-  background-color: #f2c025;
+.post {
+  list-style-type: none;
+  font-family: monospace;
+  margin: 0; 
+  padding: 0; 
+  padding-left: 8%;
+  line-height: 1.45em;
 }
 
+.postTop {
+  padding-top: 15px; 
+  font-family: monospace; 
+  list-style-type: none;
+  padding-left: 3%; 
+}
+
+.postBottom {
+  list-style-type: none;
+  font-family: monospace; 
+  width: 85%; 
+  border-bottom: 1px solid rgb(212, 174, 174); 
+  margin: 0; 
+  padding: 0; 
+  line-height: 1.45em;
+  padding-bottom: 30px;  
+  padding-left: 8%; 
+}
+
+.bottomBorder {
+  margin: auto; 
+  margin-top: 28PX;  
+  width: 40%; 
+  border-bottom: 1px solid rgb(212, 174, 174); 
+}
+
+#output {
+  width: 75%;
+  display: block; 
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  padding-left: 7%; 
+}
