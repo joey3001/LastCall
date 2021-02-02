@@ -2,49 +2,51 @@ import $ from "jquery";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-import { BreweryService } from "../src/js/BreweryService.js";
-import breweryPost from "../src/js/breweryPost.js";
+import ApiCalls from "./js/ApiCalls.js";
+import BreweryFunctions from "./js/BreweryFunctions.js";
 import Beer from "../src/js/beerConstructor.js";
 import Beers from "../src/js/beers.js";
 import User from "../src/js/user.js";
 
 $(document).ready(function () {
+
+  //Logic for confirming you are 21 on the opening page
   $(".btn-no").click(function () {
     window.location.href = "http://google.com/";
   });
 
+  //Logic for brewery finder
   $("#breweryInput").submit(async function () {
     event.preventDefault();
-    let breweryListPerState = [];
-    // let compass = $('#compass').val();
-    let street = $("#street").val().replace(/ /g, "+");
-    let city = $("#city").val().replace(/ /g, "+");
-    let stateArr = $("#state").val().split(", ");
-    let stateAbv = stateArr[0];
-    let stateName = stateArr[1];
-    let stateName2 = stateName.replace(/ /g, "+");
-    let zip = $("#zip").val().replace(/ /g, "+");
-    let userDist = parseInt($("#userDist").val());
-    let response = await BreweryService.addressCoords(
-      /*compass*/ "",
-      street,
-      city,
-      stateName2,
-      zip
-    );
-    let userAddressLatLng = response.results[0].locations[0].displayLatLng;
-    let response2 = await BreweryService.findBrewery(stateAbv);
-    breweryListPerState = response2.filter(
-      (brewery) => brewery.status === "Brewpub" || brewery.status === "Brewery"
-    );
-    breweryPost(
-      breweryListPerState,
-      stateName2,
-      userDist,
-      "#output",
-      userAddressLatLng
-    );
+    const street = $("#street").val().replace(/ /g, "+");
+    const city = $("#city").val().replace(/ /g, "+");
+
+    const stateArray = $("#state").val().split(", ");
+    const stateAbv = stateArray[0];
+    const stateName = stateArray[1].replace(/ /g, "+");
+
+    const zip = $("#zip").val().replace(/ /g, "+");
+
+    const searchRadius = parseInt($("#searchRadius").val());
+    const userAddressInfo = await ApiCalls.addressCoords(street, city, stateName, zip);
+    const userAddressLatLng = userAddressInfo.results[0].locations[0].displayLatLng;
+
+    const alcoholSalesListByState = await ApiCalls.findBrewery(stateAbv);
+    const breweryListByState = BreweryFunctions.breweryStateFilter(alcoholSalesListByState);
+    const filteredBreweriesByDistance = await BreweryFunctions.breweryDistanceFilter(breweryListByState, userAddressLatLng, stateName, searchRadius); 
+    const sortedBreweriesByDistance = BreweryFunctions.breweryDistanceSorter(filteredBreweriesByDistance); 
+
+    BreweryFunctions.breweryPost(sortedBreweriesByDistance, "#output"); 
   });
+
+
+
+
+
+
+
+
+
   //Logic for quiz appearence
   $("#startQuiz").click(function () {
     $("#titlePage").fadeOut();

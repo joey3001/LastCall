@@ -19,7 +19,6 @@ export default class User {
       if (clarity === beers.beersArray[i].clarity) {
         matching++;
       }
-
       if (matching >= 2) {
         this.beersLiked.push(beers.beersArray[i]);
       } 

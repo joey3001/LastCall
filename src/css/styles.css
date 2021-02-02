@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  top: 0px;
+  width: 100%
 }
 
 #container div {
@@ -18,6 +18,7 @@ body {
   border-top: 0;
   border-radius: 0 0 30px 30px;
   height: 200px;
+  width: 100%;
 }
 
 #liquid {
@@ -25,7 +26,7 @@ body {
   border: 1px solid #f2c025;
   height: 200px;
   overflow: hidden;
-  width: 1500px;
+  width: 100%;
 }
 
 #liquid:after {
@@ -37,7 +38,7 @@ body {
   position: absolute;
   transform: rotate(30deg);
   -webkit-transform: rotate(15deg);
-  width: 200px;
+  width: 100%;
 }
 
 #liquid:after {
@@ -48,7 +49,7 @@ body {
   left: -190px;
   position: absolute;
   -webkit-transform: rotate(-35deg);
-  width: 900px;
+  width: 100%;
   transform: rotate(50deg);
 }
 
@@ -395,6 +396,7 @@ body {
   position: absolute;
   bottom: 10px;
   height: 180px;
+  width: 100%; 
 }
 /*foam*/
 .foam-1,
@@ -456,7 +458,49 @@ body {
 .foam-57,
 .foam-58,
 .foam-59,
-.foam-60 {
+.foam-60,
+.foam-61,
+.foam-62,
+.foam-63,
+.foam-64,
+.foam-65,
+.foam-66,
+.foam-67,
+.foam-68,
+.foam-69,
+.foam-70,
+.foam-71,
+.foam-72,
+.foam-73,
+.foam-74,
+.foam-75,
+.foam-76,
+.foam-77,
+.foam-78,
+.foam-79,
+.foam-80,
+.foam-81,
+.foam-82,
+.foam-83,
+.foam-84,
+.foam-85,
+.foam-86,
+.foam-87,
+.foam-88,
+.foam-89,
+.foam-90,
+.foam-91,
+.foam-92,
+.foam-93,
+.foam-94,
+.foam-95,
+.foam-96,
+.foam-97,
+.foam-98,
+.foam-99,
+.foam-100
+.foam-101
+  {
   float: left;
   position: absolute;
   z-index: 999;
@@ -465,254 +509,412 @@ body {
   border-radius: 30px;
   background-color: #fefefe;
 }
+
 .foam-1 {
   top: -30px;
-  left: -10px;
+  left: 0%;
 }
 .foam-2 {
   top: -35px;
-  left: 20px;
+  left: 1%;
 }
 .foam-3 {
   top: -25px;
-  left: 50px;
+  left: 2%;
 }
 .foam-4 {
   top: -35px;
-  left: 80px;
+  left: 3%;
 }
 .foam-5 {
   top: -30px;
-  left: 110px;
+  left: 4%;
 }
 .foam-6 {
   top: -20px;
-  left: 140px;
+  left: 5%;
 }
 .foam-7 {
   top: -30px;
-  left: 160px;
+  left: 6%;
 }
 .foam-8 {
   top: -30px;
-  left: 170px;
+  left: 7%;
 }
 .foam-9 {
   top: -35px;
-  left: 170px;
+  left: 8%;
 }
 .foam-10 {
   top: -25px;
-  left: 210px;
+  left: 9%;
 }
 .foam-11 {
   top: -35px;
-  left: 250px;
+  left: 10%;
 }
 .foam-12 {
   top: -30px;
-  left: 270px;
+  left: 11%;
 }
 .foam-13 {
   top: -20px;
-  left: 300px;
+  left: 12%;
 }
 .foam-14 {
   top: -30px;
-  left: 340px;
+  left: 13%;
 }
 .foam-15 {
   top: -30px;
-  left: 385px;
+  left: 14%;
 }
 .foam-16 {
   top: -40px;
-  left: 410px;
+  left: 15%;
 }
 .foam-17 {
   top: -35px;
-  left: 420px;
+  left: 16%;
 }
 .foam-18 {
   top: -25px;
-  left: 450px;
+  left: 17%;
 }
 .foam-19 {
   top: -40px;
-  left: 460px;
+  left: 18%;
 }
 .foam-20 {
   top: -20px;
-  left: 470px;
+  left: 19%;
 }
 .foam-21 {
   top: -30px;
-  left: 510px;
+  left: 20%;
 }
 .foam-22 {
   top: -20px;
-  left: 520px;
+  left: 21%;
 }
 .foam-23 {
   top: -25px;
-  left: 550px;
+  left: 22%;
 }
 .foam-24 {
   top: -35px;
-  left: 570px;
+  left: 23%;
 }
 .foam-25 {
   top: -25px;
-  left: 600px;
+  left: 24%;
 }
 .foam-26 {
   top: -35px;
-  left: 620px;
+  left: 25%;
 }
 .foam-27 {
   top: -30px;
-  left: 640px;
+  left: 26%;
 }
 .foam-28 {
   top: -20px;
-  left: 670px;
+  left: 27%;
 }
 .foam-29 {
   top: -25px;
-  left: 700px;
+  left: 28%;
 }
 .foam-30 {
   top: -40px;
-  left: 715px;
+  left: 29%;
 }
 .foam-31 {
   top: -30px;
-  left: 730px;
+  left: 30%;
 }
 .foam-32 {
   top: -35px;
-  left: 750px;
+  left: 31%;
 }
 .foam-33 {
   top: -25px;
-  left: 780px;
+  left: 32%;
 }
 .foam-34 {
   top: -35px;
-  left: 800px;
+  left: 33%;
 }
 .foam-35 {
   top: -20px;
-  left: 820px;
+  left: 34%;
 }
 .foam-36 {
   top: -25px;
-  left: 840px;
+  left: 35%;
 }
 .foam-37 {
   top: -30px;
-  left: 865px;
+  left: 36%;
 }
 .foam-38 {
   top: -35px;
-  left: 875px;
+  left: 37%;
 }
 .foam-39 {
   top: -40px;
-  left: 900px;
+  left: 38%;
 }
 .foam-40 {
   top: -25px;
-  left: 930px;
+  left: 39%;
 }
 .foam-41 {
   top: -30px;
-  left: 950px;
+  left: 40%;
 }
 .foam-42 {
   top: -35px;
-  left: 970px;
+  left: 41%;
 }
 .foam-43 {
   top: -25px;
-  left: 990px;
+  left: 42%;
 }
 .foam-44 {
   top: -35px;
-  left: 1000px;
+  left: 43%;
 }
 .foam-45 {
   top: -30px;
-  left: 1030px;
+  left: 44%;
 }
 .foam-46 {
   top: -20px;
-  left: 1050px;
+  left: 45%;
 }
 .foam-47 {
   top: -30px;
-  left: 1080px;
+  left: 46%
 }
 .foam-48 {
   top: -35px;
-  left: 1110px;
+  left: 47%;
 }
 .foam-49 {
   top: -25px;
-  left: 1140px;
+  left: 48%;
 }
 .foam-50 {
   top: -35px;
-  left: 1180px;
+  left: 49%;
 }
 .foam-51 {
   top: -30px;
-  left: 1200px;
+  left: 50%;
 }
 .foam-52 {
   top: -35px;
-  left: 1230px;
+  left: 51%;
 }
 .foam-53 {
   top: -25px;
-  left: 1265px;
+  left: 52%;
 }
 .foam-54 {
   top: -35px;
-  left: 1280px;
+  left: 53%;
 }
 .foam-55 {
   top: -30px;
-  left: 1310px;
+  left: 54%;
 }
 .foam-56 {
   top: -20px;
-  left: 1330px;
+  left: 55%;
 }
 .foam-57 {
   top: -30px;
-  left: 1350px;
+  left: 56%;
 }
 .foam-58 {
   top: -30px;
-  left: 1375px;
+  left: 57%;
 }
 .foam-59 {
   top: -35px;
-  left: 1400px;
+  left: 58%;
 }
 .foam-60 {
   top: -25px;
-  left: 1420px;
+  left: 59%;
+}
+.foam-61 {
+  top: -35px;
+  left: 60%;
+}
+.foam-62 {
+  top: -30px;
+  left: 61%;
+}
+.foam-63 {
+  top: -35px;
+  left: 62%;
+}
+.foam-64 {
+  top: -25px;
+  left: 63%;
+}
+.foam-65 {
+  top: -35px;
+  left: 64%;
+}
+.foam-66 {
+  top: -30px;
+  left: 65%;
+}
+.foam-67 {
+  top: -20px;
+  left: 66%;
+}
+.foam-68 {
+  top: -30px;
+  left: 67%;
+}
+.foam-69 {
+  top: -30px;
+  left: 68%;
+}
+.foam-70 {
+  top: -40px;
+  left: 69%;
+}
+.foam-71 {
+  top: -35px;
+  left: 70%;
+}
+.foam-72 {
+  top: -25px;
+  left: 71%;
+}
+.foam-73 {
+  top: -25px;
+  left: 72%;
+}
+.foam-74 {
+  top: -40px;
+  left: 73%;
+}
+.foam-75 {
+  top: -20px;
+  left: 74%;
+}
+.foam-76 {
+  top: -30px;
+  left: 75%;
+}
+.foam-77 {
+  top: -20px;
+  left: 76%;
+}
+.foam-78 {
+  top: -25px;
+  left: 77%;
+}
+.foam-79 {
+  top: -35px;
+  left: 78%;
+}
+.foam-80 {
+  top: -30px;
+  left: 79%;
+}
+.foam-81 {
+  top: -30px;
+  left: 80%;
+}
+.foam-82 {
+  top: -40px;
+  left: 81;
+}
+.foam-83 {
+  top: -35px;
+  left: 82%;
+}
+.foam-84 {
+  top: -25px;
+  left: 83%;
+}
+.foam-85 {
+  top: -40px;
+  left: 84%;
+}
+.foam-86 {
+  top: -20px;
+  left: 85%;
+}
+.foam-87 {
+  top: -30px;
+  left: 86%;
+}
+.foam-88 {
+  top: -25px;
+  left: 87%;
+}
+.foam-89 {
+  top: -20px;
+  left: 88%;
+}
+.foam-90 {
+  top: -35px;
+  left: 89%;
+}
+.foam-91 {
+  top: -30px;
+  left: 90%;
+}
+.foam-92 {
+  top: -25px;
+  left: 91%;
+}
+.foam-93 {
+  top: -40px;
+  left: 92%;
+}
+.foam-94 {
+  top: -30px;
+  left: 93%;
+}
+.foam-95 {
+  top: -35px;
+  left: 94%;
+}
+.foam-96 {
+  top: -25px;
+  left: 95%;
+}
+.foam-97 {
+  top: -30px;
+  left: 96%;
+}
+.foam-98 {
+  top: -40px;
+  left: 97%;
+}
+.foam-99 {
+  top: -25px;
+  left: 98%;
+}
+.foam-100 {
+  top: -30px;
+  left: 99%;
+}
+.foam-101 {
+  top: -35px;
+  left: 100%;
 }
 
-/* MP3 */
-#mp3 {
-  opacity: 0;
-  margin-left: 12in;
-  margin-top: 0.1in;
-  width: 1.7in;
-}
 
 /* AGE VERIFICATION */
 .btn {
@@ -741,38 +943,45 @@ body {
   padding-top: 20px;
   font-weight: bolder;
 }
+
 h1 {
   color: #fff;
-  position: absolute;
-  margin-left: 2em;
+  position: static;
+  display: block; 
+  margin-left: 1.85em; 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 7em;
-  padding-top: 20px;
+  padding-top: 35px;
   font-weight: bolder;
 }
+
 h3 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   border-bottom: 1px solid #fff;
 }
+
 h2 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   border-bottom: 1px solid #fff;
 }
+
 p {
   color: #fff;
 }
 
 #breweryInput label {
   color: #fff;
+  text-align: center; 
+  margin: auto; 
 }
 
 /*buttons*/
-.dir {
-  margin-top: -1cm;
+.menuButtons {
+  margin-top: 20px;
 }
 
 .output a:link {
@@ -790,12 +999,13 @@ p {
   margin: 1em auto;
   display: block;
 }
-.dir ul {
+.menuButtons ul {
   float: left;
   list-style-type: none;
   margin-right: 1cm;
 }
-.dir li {
+
+.menuButtons li {
   margin: 0.3cm;
   border: 0.1px solid black;
   padding: 2px 20px 1px;
@@ -803,7 +1013,8 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-.dir li:hover {
+
+.menuButtons li:hover {
   background-color: #f2c025;
   color: black;
   transition: 0.5s;
@@ -1264,6 +1475,7 @@ ul#result li{
   font-size: 70px;
   text-shadow: 5px 5px #007272;
 }
+
 /*Styling for quiz end*/
 
 .brewery {
@@ -1274,22 +1486,51 @@ ul#result li{
   top: 0px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
-.output {
+#output {
   width: 800px;
-  margin: 0 auto;
+  margin: auto;
   overflow: hidden;
   position: relative;
-  margin-top: 0px;
+  margin-top: 30px;
   padding-left: 80px;
 }
 
 .form-control#state {
-  width: 2.5in;
+  display: block; 
+  margin: auto;  
 }
 
-#breweryInput input {
-  width: 2.5in;
+#breweryInput {
+  width: 60%; 
+  display: block; 
+  margin: auto; 
 }
+
+.center {
+  font-weight: bold; 
+  font-size: 135%; 
+  text-align: center;
+  font-family: monospace;
+  display: block; 
+  margin: auto; 
+  padding-top: 1.5%; 
+}
+
+.form-control {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  margin-top: 3%; 
+  font-family:Arial, Helvetica, sans-serif; 
+  font-size: 100%;
+  font-weight: bold;
+  background-color: #f2c025;
+}
+

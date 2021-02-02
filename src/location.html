@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
   <title></title>
   <div id="container">
     <div id="top">
@@ -65,6 +65,46 @@
         <div class="foam-58"></div>
         <div class="foam-59"></div>
         <div class="foam-60"></div>
+        <div class="foam-61"></div>
+        <div class="foam-62"></div>
+        <div class="foam-63"></div>
+        <div class="foam-64"></div>
+        <div class="foam-65"></div>
+        <div class="foam-66"></div>
+        <div class="foam-67"></div>
+        <div class="foam-68"></div>
+        <div class="foam-69"></div>
+        <div class="foam-70"></div>
+        <div class="foam-71"></div>
+        <div class="foam-72"></div>
+        <div class="foam-73"></div>
+        <div class="foam-74"></div>
+        <div class="foam-75"></div>
+        <div class="foam-76"></div>
+        <div class="foam-77"></div>
+        <div class="foam-78"></div>
+        <div class="foam-79"></div>
+        <div class="foam-80"></div>
+        <div class="foam-81"></div>
+        <div class="foam-82"></div>
+        <div class="foam-83"></div>
+        <div class="foam-84"></div>
+        <div class="foam-85"></div>
+        <div class="foam-86"></div>
+        <div class="foam-87"></div>
+        <div class="foam-88"></div>
+        <div class="foam-89"></div>
+        <div class="foam-90"></div>
+        <div class="foam-91"></div>
+        <div class="foam-92"></div>
+        <div class="foam-93"></div>
+        <div class="foam-94"></div>
+        <div class="foam-95"></div>
+        <div class="foam-96"></div>
+        <div class="foam-97"></div>
+        <div class="foam-98"></div>
+        <div class="foam-99"></div>
+        <div class="foam-100"></div>
       </div>
       <div id="liquid">
         <div class="bubble bubble1"></div>
@@ -170,34 +210,33 @@
         <div class="bubble bubble110"></div>
         <div class="bubble bubble111"></div>
         <div class="bubble bubble112"></div>
+        <h1>LAST CALL</h1>
       </div> 
-      <audio controls id="mp3">
-      </audio>
-      <div class="dir">
+      <div class="menuButtons">
         <ul>
-          <li><a href="titlepage.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;"  >HOME</a></li>
-          <li><a href="quiz.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >BEER QUIZ</a></li>
-          <li><a href="location.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >FIND BEER</a></li>
-          <li><a href="history.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;" >BEER 101</a></li>
+          <li><a href="titlepage.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;">HOME</a></li>
+          <li><a href="quiz.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;">BEER QUIZ</a></li>
+          <li><a href="location.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;">FIND BEER</a></li>
+          <li><a href="history.html" style="color: rgb(255, 255, 255);" style="text-decoration: none;">BEER 101</a></li>
         </ul>
       </div>
     </div>
-    <h1>LAST CALL</h1>
   </div>
 </head>
 <body>
   <div class="brewery">
     <h3>Brewery Finder</h3>
     <form id="breweryInput">
-      <input id="userDist" type="number" required>
-      <label for="userDist">Enter your search radius in miles</label>
-      <br>
-      <input id="street" type="text" required>
-      <label for="street">Enter your street address</label>
-      <br>
-      <input id="city" type="text" required>
-      <label for="city">Enter your city</label>
-      <br>
+      <label for="searchRadius" class="center">Enter your search radius in miles</label>
+      <input id="searchRadius" class="form-control" type="number" required>
+
+      <label for="street" class="center">Enter your street address</label>
+      <input id="street" class="form-control" type="text" required>
+
+      <label for="city" class="center">Enter your city</label>
+      <input id="city" class="form-control" type="text" required>
+
+      <label for="state" class="center">Select your state</label>
       <select class="form-control" id="state" required>
         <option value="">Select your state</option>
         <option value="al, Alabama">Alabama</option>
@@ -252,17 +291,13 @@
         <option value="wi, Wisconsin">Wisconsin</option>
         <option value="wy, Wyoming">Wyoming</option>
       </select>
-      <label for="state">Select your state</label>
-      <br>
-      <input id="zip" type="text" required>
-      <label for="zip">Enter your zip</label><br>
-      <button type="submit" class="btn btn-outline-dark">Submit</button>
+      <label for="zip" class="center">Enter your zip</label>
+      <input id="zip" class="form-control" type="text" required>
+      <button type="submit" class="btn">Submit</button>
     </form>
-  </div>
-  <div class="output">
     <ul>
-      <p id='output'></p>
+      <p id="output"></p>
     </ul>
-  </div>
+  </div> 
 </body>
 </html>
