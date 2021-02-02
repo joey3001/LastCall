@@ -1,13 +1,14 @@
 body {
-  background-color: #008b8b;
+  /* background-color: rgb(158, 158, 168); */
+  background-color: rgb(191, 204, 216); 
 }
 
 #container {
-  height: 250px;
-  margin: 0 auto;
+  height: 150px;
+  margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100%
+  width: 70%
 }
 
 #container div {
@@ -812,7 +813,7 @@ body {
 }
 .foam-76 {
   top: -30px;
-  left: 75%;
+  left: 7%;
 }
 .foam-77 {
   top: -20px;
@@ -948,18 +949,23 @@ h1 {
   color: #fff;
   position: static;
   display: block; 
-  margin-left: 1.85em; 
+  margin-left: 3em;  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 7em;
-  padding-top: 35px;
+  font-size: 450%;
+  padding-top: 40px;
   font-weight: bolder;
 }
 
 h3 {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  border-bottom: 1px solid #fff;
+  color: black;
+  border-bottom: 1px solid rgb(116, 111, 111); 
+  width: 50%; 
+  padding-top: 4%;
+  padding-bottom: 1%; 
+  margin: auto; 
+  font-family: monospace;
+  font-weight: bold; 
+  margin-bottom: 1%;
 }
 
 h2 {
@@ -970,13 +976,14 @@ h2 {
 }
 
 p {
-  color: #fff;
+  color: black;
 }
 
 #breweryInput label {
-  color: #fff;
-  text-align: center; 
+  color: black;
+  text-align: left; 
   margin: auto; 
+  padding-left: 5px; 
 }
 
 /*buttons*/
@@ -985,7 +992,7 @@ p {
 }
 
 .output a:link {
-  color: white;
+  color: black; 
 }
 
 .dir2 {
@@ -1424,7 +1431,7 @@ select.form-control {
 
 #titlePage {
   text-align: center;
-  color: white;
+  color: black;
 }
 .radio {
   text-align: left;
@@ -1455,7 +1462,7 @@ div[value="4"],
 
 ul#result {
   text-align: left;
-  color: white;
+  color: black; 
   font-size: 70px;
   text-shadow: 5px 5px #007272;
 }
@@ -1463,7 +1470,7 @@ ul#result {
 ul#result li{
   text-align: left;
   vertical-align: middle;
-  color: white;
+  color: black; 
   font-size: 50px;
   text-shadow: 5px 5px #007272;
   text-indent: 20px;
@@ -1471,7 +1478,7 @@ ul#result li{
 
 #resultError{
   text-align: left;
-  color: white;
+  color: black; 
   font-size: 70px;
   text-shadow: 5px 5px #007272;
 }
@@ -1479,7 +1486,8 @@ ul#result li{
 /*Styling for quiz end*/
 
 .brewery {
-  width: 800px;
+  width: 70%;
+  height: 4000px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -1487,6 +1495,7 @@ ul#result li{
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 0px;
+  background-color: rgb(243, 243, 243)
 }
 
 #output {
@@ -1510,9 +1519,8 @@ ul#result li{
 }
 
 .center {
-  font-weight: bold; 
-  font-size: 135%; 
-  text-align: center;
+  font-size: 110%; 
+  text-align: left; 
   font-family: monospace;
   display: block; 
   margin: auto; 
