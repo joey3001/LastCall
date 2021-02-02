@@ -23,19 +23,13 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: "./src/history.html",
-      filename: "history.html"
+      template: "./src/beer101.html",
+      filename: "beer101.html"
     }),
 
     new HtmlWebpackPlugin({
-      template: "./src/quiz.html",
-      filename: "quiz.html",
-      inject: "body"
-    }),
-
-    new HtmlWebpackPlugin({
-      template: "./src/location.html",
-      filename: "location.html",
+      template: "./src/breweryfinder.html",
+      filename: "breweryfinder.html",
       inject: "body"
     }),
 

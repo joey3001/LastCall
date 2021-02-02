@@ -1,7 +1,8 @@
 body {
-  /* background-color: rgb(158, 158, 168); */
   background-color: rgb(191, 204, 216); 
 }
+
+/* header styling */
 
 #container {
   height: 150px;
@@ -21,6 +22,8 @@ body {
   height: 200px;
   width: 100%;
 }
+
+/* liquid, foam, & bubbles for header */
 
 #liquid {
   background-color: #f2c025;
@@ -392,14 +395,13 @@ body {
   -webkit-animation-duration: 1000ms;
 }
 
-/* Foam */
 .beer-foam {
   position: absolute;
   bottom: 10px;
   height: 180px;
   width: 100%; 
 }
-/*foam*/
+
 .foam-1,
 .foam-2,
 .foam-3,
@@ -916,28 +918,7 @@ body {
   left: 100%;
 }
 
-
-/* AGE VERIFICATION */
-.btn {
-  background-color: #f2c025;
-  color: rgb(255, 255, 255);
-}
-.btn.btn-no {
-  background-color: rgb(150, 23, 23);
-}
-
-.box-center {
-  margin: 0 auto;
-  width: 40%;
-  border-radius: 10px;
-  background-color: #000000;
-  text-align: center;
-  padding: 1%;
-}
-
-/* FONTS */
-
-h1 {
+#liquid h1 {
   color: #fff;
   position: static;
   display: block; 
@@ -948,27 +929,97 @@ h1 {
   font-weight: bolder;
 }
 
-h3 {
+/* Age verification on index.html */
+
+.btn.btn-no {
+  background-color: rgb(150, 23, 23);
+}
+
+.box-center {
+  margin: auto;
+  margin-top: 5%; 
+  width: 60%;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid rgb(212, 174, 174); 
+  padding: 1%;
+}
+
+.box-center h3 {
   color: black;
   border-bottom: 1px solid rgb(212, 174, 174); 
-  width: 25%; 
+  width: 45%; 
   padding-top: 35px;
-  padding-bottom: 10px; 
+  padding-bottom: 20px; 
   margin: auto; 
   font-family: monospace;
   font-weight: bold; 
-  margin-bottom: 9px; 
+  margin-bottom: 20px; 
 }
 
-h2 {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  border-bottom: 1px solid rgb(255, 253, 253);
+.box-center p {
+  font-family: monospace; 
+  font-size: 110%; 
 }
 
-p {
-  color: black;
+.box-center p#bottom {
+  font-family: monospace; 
+  font-size: 105%; 
+  padding-bottom: 10px; 
+}
+
+/* beer 101 page  */
+
+.col-8 h2 {
+  padding-top: 15px; 
+  font-family: monospace;
+}
+
+.col-8 {
+  margin: auto; 
+  margin-top: 30px; 
+  text-align: center;
+  border: 1px solid rgb(212, 174, 174); 
+  padding: 5px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.col-8 p {
+  margin-top: 25px;
+  font-family: monospace; 
+  font-size: 105%; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  text-align: left; 
+}
+
+/* brewery finder page  */
+
+.backgroundFrame h3 {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px; 
+  margin: auto;
+  display: block;
+  margin-top: 4.5%; 
+  font-size: 120%; 
+  font-family: monospace; 
+  font-weight: bold;
+  background-color: #f2c025;
+  color: rgb(255, 255, 255);
+}
+
+h3#breweryFinder {
+  padding-top: 25px; 
+  padding-bottom: 15px; 
+  margin:auto; 
+  margin-bottom: 7px; 
+  width: 25%; 
+  border-bottom: 1px solid rgb(212, 174, 174); 
 }
 
 #breweryInput {
@@ -976,24 +1027,12 @@ p {
 }
 
 #breweryInput label {
-  color: black;
   text-align: left; 
   margin: auto; 
   padding-left: 5px; 
 }
 
-/*buttons*/
-
-.btn {
-  padding: 10px 20px; 
-  margin: auto;
-  display: block;
-  margin-top: 3%; 
-  font-size: 120%; 
-  font-family: monospace; 
-  font-weight: bold;
-  background-color: #f2c025;
-}
+/* Menu Buttons */
 
 .menuButtons {
   margin-top: 20px;
@@ -1019,82 +1058,30 @@ p {
   transition: 0.5s;
 }
 
-/* HISTORY COLUMNS */
-.column1 {
-  margin-left: auto;
-  margin-right: auto;
+/* Title Page Columns*/
+
+.col-7 {
+  margin: auto; 
+  margin-top: 30px; 
   text-align: center;
-  border: 1px solid #ffffff;
+  border: 1px solid rgb(212, 174, 174); 
   padding: 5px;
   border-radius: 3px;
-  background-color: transparent;
-  border-width: 5px;
-  width: 700px;
+  background-color: white;
 }
 
-.column2 {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid #ffffff;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: transparent;
-  border-width: 5px;
-  width: 700px;
+.col-7 p {
+  margin-top: 25px;
+  font-family: monospace; 
+  font-size: 105%; 
+  padding-left: 10px; 
+  padding-right: 10px; 
 }
 
-.column3 {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid #ffffff;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: transparent;
-  border-width: 5px;
-  width: 700px;
-}
-
-.column4 {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid #ffffff;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: transparent;
-  border-width: 5px;
-  width: 700px;
-}
-
-.column5 {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid #ffffff;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: transparent;
-  border-width: 5px;
-  width: 700px;
-}
-
-.column6 {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid #ffffff;
-  padding: 5px;
-  border-radius: 3px;
-  background-color: transparent;
-  border-width: 5px;
-  width: 700px;
-  height: 700px;
-}
-.column6 p {
-  margin-top: 0.4in;
-  font-size: x-large;
+.col-7 p.italics {
+  margin-top: 25px; 
+  font-style: italic; 
+  font-size: 100%;
 }
 
 .bubble61 {
@@ -1417,9 +1404,7 @@ select.form-control {
   display: inline-block;
 }
 
-.brewery h3 {
-  text-align: center;
-}
+
 
 #titlePage {
   text-align: center;
@@ -1477,19 +1462,6 @@ ul#result li{
 
 /*Styling for quiz end*/
 
-.brewery {
-  width: 70%;
-  height: 4000px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  top: 0px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 0px;
-  background-color: rgb(243, 243, 243)
-}
-
 .form-control#state {
   display: block; 
   margin: auto;  
@@ -1507,7 +1479,7 @@ ul#result li{
   font-family: monospace;
   display: block; 
   margin: auto; 
-  padding-top: 1.5%; 
+  padding-top: 10px; 
 }
 
 .form-control {
@@ -1545,10 +1517,17 @@ ul#result li{
 
 .bottomBorder {
   margin: auto; 
-  margin-top: 28PX;  
+  margin-top: 28px;  
   width: 40%; 
   border-bottom: 1px solid rgb(212, 174, 174);
   line-height: 1em; 
+}
+
+.bottomBorderTitle {
+  margin: auto; 
+  padding-top: 5px; 
+  width: 70%; 
+  border-bottom: 1px solid rgb(212, 174, 174);
 }
 
 #output {
@@ -1557,6 +1536,19 @@ ul#result li{
   margin: auto;
   overflow: hidden;
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
   padding-left: 7%; 
+}
+
+.backgroundFrame {
+  width: 70%;
+  height: 4000px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 0px;
+  background-color: rgb(243, 243, 243)
 }
