@@ -15,7 +15,7 @@ export default class BreweryInfoByState {
   }
 
   //Filters a list of all stores that sell alcohol in a given state to a list of only breweries/brewpubs. 
-  breweryStateFilter() {
+  filterAlcoholStoresByBreweries() {
     this.breweriesByState = this.alcoholStoreList.filter(
       (brewery) => brewery.status === "Brewpub" || brewery.status === "Brewery"
     );

@@ -13,6 +13,7 @@ $(".btn-no").click(function () {
 //Logic for brewery finder
 $("#breweryInput").submit(async function () {
   event.preventDefault();
+
   const street = $("#street").val().replace(/ /g, "+");
   const city = $("#city").val().replace(/ /g, "+");
 
@@ -27,10 +28,11 @@ $("#breweryInput").submit(async function () {
   const userCoords = userAddressInfo.results[0].locations[0].displayLatLng;
 
   const alcoholStoreList = await ApiClient.alcoholStoreList(stateAbv); 
-  let breweryInfoByState = new BreweryInfoByState(alcoholStoreList, userCoords, stateName);
-  breweryInfoByState.breweryStateFilter(); 
-  await breweryInfoByState.addDistancetoBreweries(userCoords, stateName)
-  breweryInfoByState.getLocalBreweries(searchRadius); 
+
+  let breweryInfoByState = new BreweryInfoByState(alcoholStoreList, userCoords, stateName, searchRadius);
+  breweryInfoByState.filterAlcoholStoresByBreweries(); 
+  await breweryInfoByState.addDistancetoBreweries();
+  breweryInfoByState.getLocalBreweries(); 
   breweryInfoByState.sortLocalBreweries();
   breweryInfoByState.postLocalBreweries("#output"); 
 });
