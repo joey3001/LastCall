@@ -2,7 +2,7 @@ import $ from "jquery";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-import ApiCalls from "./js/ApiCalls.js";
+import ApiClient from "./js/ApiClient.js";
 import BreweryFunctions from "./js/BreweryFunctions.js";
 
 //Logic for confirming you are 21 on the opening page
@@ -23,14 +23,13 @@ $("#breweryInput").submit(async function () {
   const zip = $("#zip").val().replace(/ /g, "+");
 
   const searchRadius = parseInt($("#searchRadius").val());
-  const userAddressInfo = await ApiCalls.addressCoords(street, city, stateName, zip);
+  const userAddressInfo = await ApiClient.addressCoords(street, city, stateName, zip);
   const userAddressLatLng = userAddressInfo.results[0].locations[0].displayLatLng;
 
-  const alcoholSalesListByState = await ApiCalls.findBrewery(stateAbv);
+  const alcoholSalesListByState = await ApiClient.alcoholEstablishmentList(stateAbv);
   const breweryListByState = BreweryFunctions.breweryStateFilter(alcoholSalesListByState);
   const filteredBreweriesByDistance = await BreweryFunctions.breweryDistanceFilter(breweryListByState, userAddressLatLng, stateName, searchRadius); 
   const sortedBreweriesByDistance = BreweryFunctions.breweryDistanceSorter(filteredBreweriesByDistance); 
 
   BreweryFunctions.breweryPost(sortedBreweriesByDistance, "#output"); 
 });
-

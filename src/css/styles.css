@@ -1,5 +1,9 @@
+html {
+  height: 100%; 
+}
+
 body {
-  background-color: rgb(191, 204, 216); 
+  background-color: #bfccd8; 
 }
 
 /* header styling */
@@ -944,6 +948,7 @@ body {
   text-align: center;
   border: 1px solid rgb(212, 174, 174); 
   padding: 1%;
+  margin-bottom: 100%; 
 }
 
 .box-center h3 {
@@ -1068,6 +1073,7 @@ h3#breweryFinder {
   padding: 5px;
   border-radius: 3px;
   background-color: white;
+  margin-bottom: 50%; 
 }
 
 .col-7 p {
@@ -1540,9 +1546,13 @@ ul#result li{
   padding-left: 7%; 
 }
 
+/* #colBottom {
+  margin-bottom: 5px; 
+} */
+
 .backgroundFrame {
   width: 70%;
-  height: 4000px;
+  height: 5000000000px; 
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -1551,4 +1561,8 @@ ul#result li{
   padding-right: 100px;
   padding-top: 0px;
   background-color: rgb(243, 243, 243)
+}
+
+#colBottom {
+  margin-bottom: 50px; 
 }
