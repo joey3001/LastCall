@@ -3,7 +3,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import ApiClient from "./js/ApiClient.js";
-import BreweryFunctions from "./js/BreweryFunctions.js";
+import BreweryFunctions from "./js/BreweryInfoByState.js";
 
 //Logic for confirming you are 21 on the opening page
 $(".btn-no").click(function () {
@@ -27,10 +27,10 @@ $("#breweryInput").submit(async function () {
   const userCoords = userAddressInfo.results[0].locations[0].displayLatLng;
 
   const alcoholStoreList = await ApiClient.alcoholStoreList(stateAbv); 
-  let breweryFunctions = new BreweryFunctions(alcoholStoreList);
-  breweryFunctions.breweryStateFilter(); 
-  await breweryFunctions.addDistancetoBreweries(userCoords, stateName)
-  breweryFunctions.getLocalBreweries(searchRadius); 
-  breweryFunctions.sortLocalBreweries();
-  breweryFunctions.postLocalBreweries("#output"); 
+  let breweryInfoByState = new BreweryInfoByState(alcoholStoreList, userCoords, stateName);
+  breweryInfoByState.breweryStateFilter(); 
+  await breweryInfoByState.addDistancetoBreweries(userCoords, stateName)
+  breweryInfoByState.getLocalBreweries(searchRadius); 
+  breweryInfoByState.sortLocalBreweries();
+  breweryInfoByState.postLocalBreweries("#output"); 
 });
