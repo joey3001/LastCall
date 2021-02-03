@@ -24,12 +24,13 @@ $("#breweryInput").submit(async function () {
 
   const searchRadius = parseInt($("#searchRadius").val());
   const userAddressInfo = await ApiClient.addressCoords(street, city, stateName, zip);
-  const userAddressLatLng = userAddressInfo.results[0].locations[0].displayLatLng;
+  const userCoords = userAddressInfo.results[0].locations[0].displayLatLng;
 
-  const alcoholSalesListByState = await ApiClient.alcoholEstablishmentList(stateAbv);
-  const breweryListByState = BreweryFunctions.breweryStateFilter(alcoholSalesListByState);
-  const filteredBreweriesByDistance = await BreweryFunctions.breweryDistanceFilter(breweryListByState, userAddressLatLng, stateName, searchRadius); 
-  const sortedBreweriesByDistance = BreweryFunctions.breweryDistanceSorter(filteredBreweriesByDistance); 
-
-  BreweryFunctions.breweryPost(sortedBreweriesByDistance, "#output"); 
+  const alcoholStoreList = await ApiClient.alcoholStoreList(stateAbv); 
+  let breweryFunctions = new BreweryFunctions(alcoholStoreList);
+  breweryFunctions.breweryStateFilter(); 
+  await breweryFunctions.addDistancetoBreweries(userCoords, stateName)
+  breweryFunctions.getLocalBreweries(searchRadius); 
+  breweryFunctions.sortLocalBreweries();
+  breweryFunctions.postLocalBreweries("#output"); 
 });

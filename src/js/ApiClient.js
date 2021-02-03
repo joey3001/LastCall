@@ -13,7 +13,7 @@ export default class ApiClient {
     }
   }
 
-  static async alcoholEstablishmentList(state) {
+  static async alcoholStoreList(state) {
     return this.makeApiRequest(`http://beermapping.com/webservice/locstate/${process.env.API_KEY}/${state}&s=json`);
   }
 

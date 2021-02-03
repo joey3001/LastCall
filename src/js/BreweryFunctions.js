@@ -3,12 +3,48 @@ import $ from 'jquery';
 
 export default class BreweryFunctions {
 
-  //Filters a list of all organizations that sell alcohol in a given state to a list of only breweries/brewpubs. 
-  static breweryStateFilter(alcoholSalesListByState) {
+  constructor(alcoholStoreList) {
+    this.alcoholStoreList = alcoholStoreList;
+    this.breweriesByState;
+    this.breweriesWithDistance;
+    this.breweriestFilteredByDistance; 
+    this.breweriesFilteredAndSortedByDistance; 
+  }
 
-    return alcoholSalesListByState.filter(
+  //Filters a list of all organizations that sell alcohol in a given state to a list of only breweries/brewpubs. 
+  breweryStateFilter() {
+    this.breweriesByState = this.alcoholStoreList.filter(
       (brewery) => brewery.status === "Brewpub" || brewery.status === "Brewery"
     );
+  }
+
+  async addDistancetoBreweries(userCoords, stateName) {
+    this.breweriesWithDistance = await Promise.all(this.breweriesByState.map(brewery =>  
+      BreweryFunctions.breweryDistanceCalculator(brewery, userCoords, stateName)
+    ));
+  }
+
+  getLocalBreweries(searchRadius) {
+    this.breweriesFilteredByDistance = this.breweriesWithDistance.filter(
+      (brewery) => brewery.distance <= searchRadius
+    );
+  }
+
+  sortLocalBreweries() {
+    this.breweriesFilteredAndSortedByDistance = this.breweriesFilteredByDistance.sort(
+      (a,b) => a.distance - b.distance
+    );
+  }
+
+  postLocalBreweries(selector) {
+    $(selector).text("");
+    for(let i = 0; i < this.breweriesFilteredAndSortedByDistance.length; i++) {
+      let brewery = this.breweriesFilteredAndSortedByDistance[i];
+      $(selector).append('<li class=' + 'postTop' + '>' + brewery.name + '</li>');
+      $(selector).append('<ul class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</ul>');
+      $(selector).append('<ul class=' + 'post' + '>Address: ' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</ul>');
+      $(selector).append('<ul class=' + 'postBottom' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></ul>');
+    }
   }
 
   //Calculates the distance between the currently indexed brewery & the user's address. 
@@ -21,37 +57,5 @@ export default class BreweryFunctions {
     const distance = 69 * Math.sqrt(Math.pow(deltaLng, 2) + Math.pow(deltaLat, 2));
     indexedBrewery.distance = distance; 
     return indexedBrewery;
-  }
-
-  //Filters breweries that are within the user's specified search Radius. 
-  static async breweryDistanceFilter(breweryListByState, userAddressLatLng, stateNameReformatted, searchRadius) { 
-    console.log(breweryListByState);
-    for (let i = 0; i < breweryListByState.length; i++) {
-      breweryListByState[i] = await BreweryFunctions.breweryDistanceCalculator(breweryListByState[i], userAddressLatLng, stateNameReformatted);
-    }
-
-    return breweryListByState.filter(
-      (brewery) => brewery.distance <= searchRadius
-    );
-  }
-
-  //Sorts breweries from least to most distant from the user's address
-  static breweryDistanceSorter(breweriesFilteredByDistance) {
-
-    return breweriesFilteredByDistance.sort(
-      (a,b) => a.distance - b.distance
-    );
-  }
-
-  //Posts to the DOM breweries within the user's specified search Radius & sorted from least to most distant from the user's address. 
-  static breweryPost(sortedBreweriesByDistance, selector) {
-
-    $(selector).text("");
-    for (let i = 0; i < sortedBreweriesByDistance.length ; i++) {
-      $(selector).append('<li class=' + 'postTop' + '>' + sortedBreweriesByDistance[i].name + '</li>');
-      $(selector).append('<ul class=' + 'post' + '>Distance: ' + sortedBreweriesByDistance[i].distance.toFixed(1) + ' Miles</ul>');
-      $(selector).append('<ul class=' + 'post' + '>Address: ' + sortedBreweriesByDistance[i].street + ', ' + sortedBreweriesByDistance[i].city + ', ' + sortedBreweriesByDistance[i].zip + '</ul>');
-      $(selector).append('<ul class=' + 'postBottom' + '>Website: <a href=https://www.' + sortedBreweriesByDistance[i].url.toString() + '>' + sortedBreweriesByDistance[i].url + '</a></ul>');
-    }
   }
 }
