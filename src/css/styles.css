@@ -1027,11 +1027,15 @@ h3#breweryFinder {
   border-bottom: 1px solid rgb(212, 174, 174); 
 }
 
-#breweryInput {
+#addressInput {
   padding-top: 2px; 
+  width: 50%; 
+  display: block; 
+  margin: auto; 
 }
 
-#breweryInput label {
+
+#addressInput label {
   text-align: left; 
   margin: auto; 
   padding-left: 5px; 
@@ -1473,12 +1477,6 @@ ul#result li{
   margin: auto;  
 }
 
-#breweryInput {
-  width: 60%; 
-  display: block; 
-  margin: auto; 
-}
-
 .center {
   font-size: 110%; 
   text-align: left; 
@@ -1497,28 +1495,15 @@ ul#result li{
   list-style-type: none;
   font-family: monospace;
   margin: 0; 
-  padding: 0; 
-  padding-left: 8%;
+  padding-left: 34%;
   line-height: 1.45em;
 }
 
 .postTop {
-  padding-top: 20px; 
+  padding-top: 15px; 
   font-family: monospace; 
   list-style-type: none;
-  padding-left: 3%; 
-}
-
-.postBottom {
-  list-style-type: none;
-  font-family: monospace; 
-  width: 85%; 
-  border-bottom: 1px solid rgb(212, 174, 174); 
-  margin: 0; 
-  padding: 0; 
-  line-height: 1.45em;
-  padding-bottom: 30px;  
-  padding-left: 8%; 
+  padding-left: 31%; 
 }
 
 .bottomBorder {
@@ -1537,13 +1522,8 @@ ul#result li{
 }
 
 #output {
-  width: 75%;
-  display: block; 
-  margin: auto;
-  overflow: hidden;
-  position: relative;
   margin-top: 10px;
-  padding-left: 7%; 
+  height: 100%; 
 }
 
 /* #colBottom {
@@ -1552,17 +1532,35 @@ ul#result li{
 
 .backgroundFrame {
   width: 70%;
-  height: 5000000000px; 
+  height: 100%; 
   margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  top: 0px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 0px;
-  background-color: rgb(243, 243, 243)
+  background-color: rgb(243, 243, 243);
+  overflow: hidden; 
 }
 
 #colBottom {
   margin-bottom: 50px; 
+}
+
+body#breweryFinder {
+  height: 10000px; 
+}
+
+html#breweryFinder{
+  height: 100%; 
+}
+
+.bottomBorderPost {
+  margin: auto; 
+  margin-top: 30px; 
+  width: 50%; 
+  border-bottom: 1px solid rgb(212, 174, 174);
+}
+
+.postTopCenter {  
+  padding-top: 15px; 
+  font-family: monospace; 
+  list-style-type: none;
+  text-align: center; 
+  margin: auto; 
 }

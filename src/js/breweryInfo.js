@@ -1,7 +1,7 @@
 import ApiClient from './ApiClient.js';
 import $ from 'jquery';
 
-export default class BreweryInfoByState {
+export default class BreweryInfo {
 
   constructor(alcoholStoreList, userCoords, stateName, searchRadius) {
     this.alcoholStoreList = alcoholStoreList;
@@ -24,7 +24,7 @@ export default class BreweryInfoByState {
   //Adds distance key:value pair to brewery objects
   async addDistancetoBreweries() {
     this.breweriesWithDistance = await Promise.all(this.breweriesByState.map(brewery =>  
-      BreweryFunctions.breweryDistanceCalculator(brewery, this.userCoords, this.stateName)
+      BreweryInfo.breweryDistanceCalculator(brewery, this.userCoords, this.stateName)
     ));
   }
 
@@ -43,20 +43,27 @@ export default class BreweryInfoByState {
   }
 
   //Posts breweries to a specified selector in the DOM 
-  postLocalBreweries(selector) {
+  async postLocalBreweries(selector, userStreet, userCity, userZip) {
     $(selector).text("");
-    for(let i = 0; i < this.breweriesFilteredAndSortedByDistance.length; i++) {
-      let brewery = this.breweriesFilteredAndSortedByDistance[i];
-      $(selector).append('<li class=' + 'postTop' + '>' + brewery.name + '</li>');
-      $(selector).append('<ul class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</ul>');
-      $(selector).append('<ul class=' + 'post' + '>Address: ' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</ul>');
-      $(selector).append('<ul class=' + 'postBottom' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></ul>');
+    if (this.breweriesFilteredAndSortedByDistance.length) {
+      for (let i = 0; i < this.breweriesFilteredAndSortedByDistance.length; i++) {
+        let brewery = this.breweriesFilteredAndSortedByDistance[i];
+        $(selector).append('<li class=' + 'postTop' + '>' + brewery.name + '</li>');
+        $(selector).append('<li class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</li>');
+        $(selector).append('<li class=' + 'post' + '>Address: <a href=https://www.google.com/maps/dir/?api=1&origin=' + userStreet + '+' + userCity + "+" + "+" + this.stateName + "+" + userZip + '&destination=' + brewery.street.replace(/\s/g, '+') + '+' + brewery.city + '+' + this.stateName + '+' + brewery.zip + '>' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</a></li>');
+        $(selector).append('<li class=' + 'post' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></li>');
+        $(selector).append('<div class=' + 'bottomBorderPost' + '></div>');
+      }
+    } 
+    else {
+      $(selector).append('<li class=' + 'postTopCenter' + '>' + 'Your search returned no results. Try expanding your search radius.' + '</li>');
     }
   }
 
+  //https://www.google.com/maps/dir/?api=1&origin=Space+Needle+Seattle+WA&destination=Pike+Place+Market+Seattle+WA&travelmode=bicycling
+
   //Calculates the distance between the currently indexed brewery & the user's address. 
   static async breweryDistanceCalculator(indexedBrewery, userCoords, stateName) {
-
     const breweryMapQuestApiResponse = await ApiClient.addressCoords(indexedBrewery.street.replace(/ /g,"+"), indexedBrewery.city.replace(/ /g,"+"), stateName, indexedBrewery.zip); 
     const breweryLatLng = breweryMapQuestApiResponse.results[0].locations[0].displayLatLng;
     const deltaLng = (breweryLatLng.lng - userCoords.lng);
