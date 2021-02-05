@@ -30,7 +30,7 @@ export default class BrewerySearchInfo {
   //Adds distance key:value pair to brewery objects
   async addDistancetoBreweries() {
     this.breweriesWithDistance = await Promise.all(this.breweriesByState.map(brewery =>  
-      BrewerySearchInfo.breweryDistanceCalculator(brewery, this.user.Coords, this.user.stateName)
+      BrewerySearchInfo.breweryDistanceCalculator(brewery, this.user.coords, this.user.stateName)
     ));
   }
 
@@ -56,10 +56,11 @@ export default class BrewerySearchInfo {
         let brewery = this.breweriesFilteredAndSortedByDistance[i];
         $('<li class=' + 'postTop' + '>' + brewery.name + '</li>').hide().appendTo(selector).fadeIn(); 
         $('<li class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</li>').hide().appendTo(selector).fadeIn(); 
-        $('<li class=' + 'post' + '>Address: <a href=https://www.google.com/maps/dir/?api=1&origin=' + this.user.street + '+' + this.user.city + "+" + "+" + this.user.stateName + "+" + this.user.zip + '&destination=' + brewery.street.replace(/\s/g, '+') + '+' + brewery.city + '+' + this.stateName + '+' + brewery.zip + '>' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</a></li>').hide().appendTo(selector).fadeIn(); 
+        $('<li class=' + 'post' + '>Address: <a href=https://www.google.com/maps/dir/?api=1&origin=' + this.user.street + '+' + this.user.city + "+" + "+" + this.user.stateName + "+" + this.user.zip + '&destination=' + brewery.street.replace(/\s/g, '+') + '+' + brewery.city + '+' + this.user.stateName + '+' + brewery.zip + '>' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</a></li>').hide().appendTo(selector).fadeIn(); 
         $('<li class=' + 'post' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></li>').hide().appendTo(selector).fadeIn();
         $('<div class=' + 'bottomBorderPost' + '></div>').hide().appendTo(selector).fadeIn();  
       }
+      //https://www.google.com/maps/dir/?api=1&origin=undefined+undefined++District+of+Columbia+undefined&destination=900+F+St.+NW+Washington+undefined+20004
     } 
     else {
       $(selector).append('<li class=' + 'postTopCenter' + '>' + 'Your search returned no results. Try expanding your search radius.' + '</li>');
