@@ -14,6 +14,9 @@ $(".btn-no").click(function () {
 $("#addressInput").submit(async function () {
   event.preventDefault();
 
+  //Run 'loading' animation function
+  $('#cartoonBeer').addClass('animate');
+
   //Take input from user to construct args
   const street = $("#street").val().replace(/ /g, "+");
   const city = $("#city").val().replace(/ /g, "+");
@@ -25,17 +28,24 @@ $("#addressInput").submit(async function () {
 
   const searchRadius = parseInt($("#searchRadius").val());
 
-  //use Mapquest Api to get Lat/Long coordinates for user's address 
+  //Use Mapquest Api to get Lat/Long coordinates for user's address 
   const userAddressInfo = await ApiClient.addressCoords(street, city, stateName, zip);
   const userCoords = userAddressInfo.results[0].locations[0].displayLatLng;
 
-  //use Beermapping Api to get a list of all alcohol stores in the user's state
+  //Use Beermapping Api to get a list of all alcohol stores in the user's state
   const alcoholStoreList = await ApiClient.alcoholStoreList(stateAbv); 
 
-  //Pass args into a constructor to perform operations with
+  // Pass args into a constructor to perform operations with
   let breweryInfo = new BreweryInfo(alcoholStoreList, userCoords, stateName, searchRadius);
   breweryInfo.filterAlcoholStoresByBreweries(); 
   await breweryInfo.addDistancetoBreweries();
+
+  //End 'loading' animation function
+  $("#cartoonBeer").fadeIn(2000, () => {
+    $('#cartoonBeer').removeClass('animate'); 
+  }); 
+
+  //perform additional operations with constructor
   breweryInfo.getLocalBreweries(); 
   breweryInfo.sortLocalBreweries();
   breweryInfo.postLocalBreweries("#output", street, city, zip); 

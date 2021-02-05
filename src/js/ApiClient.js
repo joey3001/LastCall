@@ -14,10 +14,10 @@ export default class ApiClient {
   }
 
   static async alcoholStoreList(state) {
-    return this.makeApiRequest(`http://beermapping.com/webservice/locstate/${process.env.API_KEY}/${state}&s=json`);
+    return this.makeApiRequest(`https://beermapping.com/webservice/locstate/${process.env.API_KEY}/${state}&s=json`);
   }
 
   static async addressCoords(street, city, state, zip) {
-    return this.makeApiRequest(`http://www.mapquestapi.com/geocoding/v1/address?key=${process.env.API_KEY2}&street=${street}+&city=${city}&state=${state}&postalCode=${zip}`);
+    return this.makeApiRequest(`https://www.mapquestapi.com/geocoding/v1/address?key=${process.env.API_KEY2}&street=${street}+&city=${city}&state=${state}&postalCode=${zip}`);
   }
 }
