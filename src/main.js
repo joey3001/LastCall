@@ -15,7 +15,7 @@ $("#addressInput").submit(async function () {
   event.preventDefault();
 
   //Run 'loading' animation function
-  $('#cartoonBeer').addClass('animate');
+  $('#cartoonBeer').fadeIn(1500).css("display","block");
 
   //Take input from user to construct args
   const street = $("#street").val().replace(/ /g, "+");
@@ -40,13 +40,10 @@ $("#addressInput").submit(async function () {
   breweryInfo.filterAlcoholStoresByBreweries(); 
   await breweryInfo.addDistancetoBreweries();
 
-  //End 'loading' animation function
-  $("#cartoonBeer").fadeIn(2000, () => {
-    $('#cartoonBeer').removeClass('animate'); 
-  }); 
-
-  //perform additional operations with constructor
-  breweryInfo.getLocalBreweries(); 
-  breweryInfo.sortLocalBreweries();
-  breweryInfo.postLocalBreweries("#output", street, city, zip); 
+  //End 'loading' animation function & execute additional operations upon completion of the animation
+  $('#cartoonBeer').fadeOut(1500, () => {
+    breweryInfo.getLocalBreweries(); 
+    breweryInfo.sortLocalBreweries();
+    breweryInfo.postLocalBreweries("#output", street, city, zip); 
+  })
 });

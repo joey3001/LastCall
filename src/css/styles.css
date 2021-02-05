@@ -1566,22 +1566,9 @@ html#breweryFinder{
 }
 
 #cartoonBeer {
-  padding-top: 17px; 
-  text-align: center; 
-  display: none; 
-  text-align: center; 
   margin: auto; 
-  width: 10%;
+  display: none; 
+  padding-top: 20px; 
+  width: 8%;
   height: auto; 
-}
-
-@keyframes flickerAnimation { 
-  0%   { opacity:1; }
-  30%  { opacity:0; }
-  100%  { opacity:1; }
-}
-
-.animate {
-    opacity:1;  
-    animation: flickerAnimation 2.5s infinite;
 }
