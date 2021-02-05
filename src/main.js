@@ -2,8 +2,8 @@ import $ from "jquery";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-import ApiClient from "./js/ApiClient.js";
-import BreweryInfo from "./js/breweryInfo.js";
+import BrewerySearchInfo from "./js/brewerySearchInfo.js";
+import UserInfo from "./js/userInfo";
 
 //Logic for confirming you are 21 on the opening page
 $(".btn-no").click(function () {
@@ -28,22 +28,20 @@ $("#addressInput").submit(async function () {
 
   const searchRadius = parseInt($("#searchRadius").val());
 
-  //Use Mapquest Api to get Lat/Long coordinates for user's address 
-  const userAddressInfo = await ApiClient.addressCoords(street, city, stateName, zip);
-  const userCoords = userAddressInfo.results[0].locations[0].displayLatLng;
+  //Pass args into a constructor to house user info & get user coordinates
+  let userInfo = new UserInfo(street, city, zip, stateName, stateAbv, searchRadius);
+  await userInfo.getCoords(); 
 
-  //Use Beermapping Api to get a list of all alcohol stores in the user's state
-  const alcoholStoreList = await ApiClient.alcoholStoreList(stateAbv); 
-
-  // Pass args into a constructor to perform operations with
-  let breweryInfo = new BreweryInfo(alcoholStoreList, userCoords, stateName, searchRadius);
-  breweryInfo.filterAlcoholStoresByBreweries(); 
-  await breweryInfo.addDistancetoBreweries();
+  // Pass user into a constructor to perform operations with
+  let brewerySearchInfo = new BrewerySearchInfo(userInfo);
+  await brewerySearchInfo.getAlcoholStoreList(); 
+  brewerySearchInfo.filterAlcoholStoresByBreweries();
+  await brewerySearchInfo.addDistancetoBreweries();
 
   //End 'loading' animation function & execute additional operations upon completion of the animation
   $('#cartoonBeer').fadeOut(1500, () => {
-    breweryInfo.getLocalBreweries(); 
-    breweryInfo.sortLocalBreweries();
-    breweryInfo.postLocalBreweries("#output", street, city, zip); 
-  })
+    brewerySearchInfo.getLocalBreweries(); 
+    brewerySearchInfo.sortLocalBreweries();
+    brewerySearchInfo.postLocalBreweries("#output", street, city, zip); 
+  }); 
 });
