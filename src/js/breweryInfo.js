@@ -48,11 +48,11 @@ export default class BreweryInfo {
     if (this.breweriesFilteredAndSortedByDistance.length) {
       for (let i = 0; i < this.breweriesFilteredAndSortedByDistance.length; i++) {
         let brewery = this.breweriesFilteredAndSortedByDistance[i];
-        $('<li class=' + 'postTop' + '>' + brewery.name + '</li>').hide().appendTo(selector).fadeIn('slow'); 
-        $('<li class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</li>').hide().appendTo(selector).fadeIn('slow'); 
-        $('<li class=' + 'post' + '>Address: <a href=https://www.google.com/maps/dir/?api=1&origin=' + userStreet + '+' + userCity + "+" + "+" + this.stateName + "+" + userZip + '&destination=' + brewery.street.replace(/\s/g, '+') + '+' + brewery.city + '+' + this.stateName + '+' + brewery.zip + '>' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</a></li>').hide().appendTo(selector).fadeIn('slow'); 
-        $('<li class=' + 'post' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></li>').hide().appendTo(selector).fadeIn('slow');
-        $('<div class=' + 'bottomBorderPost' + '></div>').hide().appendTo(selector).fadeIn('slow');  
+        $('<li class=' + 'postTop' + '>' + brewery.name + '</li>').hide().appendTo(selector).fadeIn(); 
+        $('<li class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</li>').hide().appendTo(selector).fadeIn(); 
+        $('<li class=' + 'post' + '>Address: <a href=https://www.google.com/maps/dir/?api=1&origin=' + userStreet + '+' + userCity + "+" + "+" + this.stateName + "+" + userZip + '&destination=' + brewery.street.replace(/\s/g, '+') + '+' + brewery.city + '+' + this.stateName + '+' + brewery.zip + '>' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</a></li>').hide().appendTo(selector).fadeIn(); 
+        $('<li class=' + 'post' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></li>').hide().appendTo(selector).fadeIn();
+        $('<div class=' + 'bottomBorderPost' + '></div>').hide().appendTo(selector).fadeIn();  
       }
     } 
     else {

@@ -1,3 +1,5 @@
+/* General page styling */
+
 html {
   height: 100%; 
 }
@@ -6,7 +8,7 @@ body {
   background-color: #bfccd8; 
 }
 
-/* header styling */
+/* Header styling */
 
 #container {
   height: 150px;
@@ -27,7 +29,7 @@ body {
   width: 100%;
 }
 
-/* liquid, foam, & bubbles for header */
+/* Liquid, foam, & bubbles for header */
 
 #liquid {
   background-color: #f2c025;
@@ -397,6 +399,318 @@ body {
   left: 1440px;
   -webkit-animation-delay: 1000ms;
   -webkit-animation-duration: 1000ms;
+}
+
+.bubble61 {
+  left: 20px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble62 {
+  left: 40px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble63 {
+  left: 80px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble64 {
+  left: 110px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble65 {
+  left: 140px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble66 {
+  left: 170px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble67 {
+  left: 200px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble68 {
+  left: 230px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble69 {
+  left: 260px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble70 {
+  left: 290px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble71 {
+  left: 320px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble72 {
+  left: 350px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble73 {
+  left: 380px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble74 {
+  left: 410px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble75 {
+  left: 440px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble76 {
+  left: 470px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble77 {
+  left: 500px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble78 {
+  left: 530px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble79 {
+  left: 550px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble80 {
+  left: 580px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble81 {
+  left: 610px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble82 {
+  left: 640px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble83 {
+  left: 680px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble84 {
+  left: 710px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble85 {
+  left: 740px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble86 {
+  left: 770px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble87 {
+  left: 800px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble88 {
+  left: 830px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble89 {
+  left: 860px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble90 {
+  left: 890px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
+}
+
+.bubble91 {
+  left: 930px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble92 {
+  left: 950px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble93 {
+  left: 980px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble94 {
+  left: 1010px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble95 {
+  left: 1040px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble96 {
+  left: 1070px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble97 {
+  left: 1100px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble98 {
+  left: 1130px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble99 {
+  left: 1160px;
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-duration: 600ms;
+}
+
+.bubble100 {
+  left: 1090px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble101 {
+  left: 1120px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble102 {
+  left: 1150px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble103 {
+  left: 1180px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble104 {
+  left: 1210px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble105 {
+  left: 1240px;
+  -webkit-animation-delay: 1300ms;
+  -webkit-animation-duration: 1300ms;
+}
+
+.bubble106 {
+  left: 1270px;
+  -webkit-animation-delay: 700ms;
+  -webkit-animation-duration: 700ms;
+}
+
+.bubble107 {
+  left: 1300px;
+  -webkit-animation-delay: 900ms;
+  -webkit-animation-duration: 900ms;
+}
+
+.bubble108 {
+  left: 1330px;
+  -webkit-animation-delay: 800ms;
+  -webkit-animation-duration: 800ms;
+}
+
+.bubble109 {
+  left: 1360px;
+  -webkit-animation-delay: 1100ms;
+  -webkit-animation-duration: 1100ms;
+}
+
+.bubble110 {
+  left: 1390px;
+  -webkit-animation-delay: 1000ms;
+  -webkit-animation-duration: 1000ms;
+}
+
+.bubble111 {
+  left: 1420px;
+  -webkit-animation-delay: 1200ms;
+  -webkit-animation-duration: 1200ms;
+}
+
+.bubble112 {
+  left: 1450px;
+  -webkit-animation-delay: 1500ms;
+  -webkit-animation-duration: 1500ms;
 }
 
 .beer-foam {
@@ -1034,11 +1348,97 @@ h3#breweryFinder {
   margin: auto; 
 }
 
-
 #addressInput label {
   text-align: left; 
   margin: auto; 
   padding-left: 5px; 
+}
+
+.center {
+  font-size: 110%; 
+  text-align: left; 
+  font-family: monospace;
+  display: block; 
+  margin: auto; 
+  padding-top: 10px; 
+}
+
+.post {
+  list-style-type: none;
+  font-family: monospace;
+  margin: 0; 
+  padding-left: 34%;
+  line-height: 1.45em;
+}
+
+.postTop {
+  padding-top: 15px; 
+  font-family: monospace; 
+  list-style-type: none;
+  padding-left: 31%; 
+}
+
+.bottomBorder {
+  margin: auto; 
+  margin-top: 28px;  
+  width: 40%; 
+  border-bottom: 1px solid rgb(212, 174, 174);
+  line-height: 1em; 
+}
+
+.bottomBorderTitle {
+  margin: auto; 
+  padding-top: 5px; 
+  width: 70%; 
+  border-bottom: 1px solid rgb(212, 174, 174);
+}
+
+#output {
+  margin-top: 10px;
+  height: 100%; 
+}
+
+.backgroundFrame {
+  width: 70%;
+  height: 100%; 
+  margin: 0 auto;
+  background-color: rgb(243, 243, 243);
+  overflow: hidden; 
+}
+
+#colBottom {
+  margin-bottom: 50px; 
+}
+
+body#breweryFinder {
+  height: 10000px; 
+}
+
+html#breweryFinder{
+  height: 100%; 
+}
+
+.bottomBorderPost {
+  margin: auto; 
+  margin-top: 30px; 
+  width: 50%; 
+  border-bottom: 1px solid rgb(212, 174, 174);
+}
+
+.postTopCenter {  
+  padding-top: 15px; 
+  font-family: monospace; 
+  list-style-type: none;
+  text-align: center; 
+  margin: auto; 
+}
+
+#cartoonBeer {
+  margin: auto; 
+  display: none; 
+  padding-top: 20px; 
+  width: 8%;
+  height: auto; 
 }
 
 /* Menu Buttons */
@@ -1094,424 +1494,15 @@ h3#breweryFinder {
   font-size: 100%;
 }
 
-.bubble61 {
-  left: 20px;
-  -webkit-animation-delay: 1500ms;
-  -webkit-animation-duration: 1500ms;
-}
-
-.bubble62 {
-  left: 40px;
-  -webkit-animation-delay: 900ms;
-  -webkit-animation-duration: 900ms;
-}
-
-.bubble63 {
-  left: 80px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble64 {
-  left: 110px;
-  -webkit-animation-delay: 700ms;
-  -webkit-animation-duration: 700ms;
-}
-
-.bubble65 {
-  left: 140px;
-  -webkit-animation-delay: 1200ms;
-  -webkit-animation-duration: 1200ms;
-}
-
-.bubble66 {
-  left: 170px;
-  -webkit-animation-delay: 1300ms;
-  -webkit-animation-duration: 1300ms;
-}
-
-.bubble67 {
-  left: 200px;
-  -webkit-animation-delay: 800ms;
-  -webkit-animation-duration: 800ms;
-}
-
-.bubble68 {
-  left: 230px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble69 {
-  left: 260px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble70 {
-  left: 290px;
-  -webkit-animation-delay: 600ms;
-  -webkit-animation-duration: 600ms;
-}
-
-.bubble71 {
-  left: 320px;
-  -webkit-animation-delay: 800ms;
-  -webkit-animation-duration: 800ms;
-}
-
-.bubble72 {
-  left: 350px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble73 {
-  left: 380px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble74 {
-  left: 410px;
-  -webkit-animation-delay: 1200ms;
-  -webkit-animation-duration: 1200ms;
-}
-
-.bubble75 {
-  left: 440px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble76 {
-  left: 470px;
-  -webkit-animation-delay: 1500ms;
-  -webkit-animation-duration: 1500ms;
-}
-
-.bubble77 {
-  left: 500px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble78 {
-  left: 530px;
-  -webkit-animation-delay: 600ms;
-  -webkit-animation-duration: 600ms;
-}
-
-.bubble79 {
-  left: 550px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble80 {
-  left: 580px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble81 {
-  left: 610px;
-  -webkit-animation-delay: 700ms;
-  -webkit-animation-duration: 700ms;
-}
-
-.bubble82 {
-  left: 640px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble83 {
-  left: 680px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble84 {
-  left: 710px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble85 {
-  left: 740px;
-  -webkit-animation-delay: 900ms;
-  -webkit-animation-duration: 900ms;
-}
-
-.bubble86 {
-  left: 770px;
-  -webkit-animation-delay: 700ms;
-  -webkit-animation-duration: 700ms;
-}
-
-.bubble87 {
-  left: 800px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble88 {
-  left: 830px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble89 {
-  left: 860px;
-  -webkit-animation-delay: 600ms;
-  -webkit-animation-duration: 600ms;
-}
-
-.bubble90 {
-  left: 890px;
-  -webkit-animation-delay: 1500ms;
-  -webkit-animation-duration: 1500ms;
-}
-
-.bubble91 {
-  left: 930px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1200ms;
-}
-
-.bubble92 {
-  left: 950px;
-  -webkit-animation-delay: 700ms;
-  -webkit-animation-duration: 700ms;
-}
-
-.bubble93 {
-  left: 980px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble94 {
-  left: 1010px;
-  -webkit-animation-delay: 1300ms;
-  -webkit-animation-duration: 1300ms;
-}
-
-.bubble95 {
-  left: 1040px;
-  -webkit-animation-delay: 800ms;
-  -webkit-animation-duration: 800ms;
-}
-
-.bubble96 {
-  left: 1070px;
-  -webkit-animation-delay: 600ms;
-  -webkit-animation-duration: 600ms;
-}
-
-.bubble97 {
-  left: 1100px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble98 {
-  left: 1130px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble99 {
-  left: 1160px;
-  -webkit-animation-delay: 600ms;
-  -webkit-animation-duration: 600ms;
-}
-
-.bubble100 {
-  left: 1090px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble101 {
-  left: 1120px;
-  -webkit-animation-delay: 900ms;
-  -webkit-animation-duration: 900ms;
-}
-
-.bubble102 {
-  left: 1150px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble103 {
-  left: 1180px;
-  -webkit-animation-delay: 800ms;
-  -webkit-animation-duration: 800ms;
-}
-
-.bubble104 {
-  left: 1210px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble105 {
-  left: 1240px;
-  -webkit-animation-delay: 1300ms;
-  -webkit-animation-duration: 1300ms;
-}
-
-.bubble106 {
-  left: 1270px;
-  -webkit-animation-delay: 700ms;
-  -webkit-animation-duration: 700ms;
-}
-
-.bubble107 {
-  left: 1300px;
-  -webkit-animation-delay: 900ms;
-  -webkit-animation-duration: 900ms;
-}
-
-.bubble108 {
-  left: 1330px;
-  -webkit-animation-delay: 800ms;
-  -webkit-animation-duration: 800ms;
-}
-
-.bubble109 {
-  left: 1360px;
-  -webkit-animation-delay: 1100ms;
-  -webkit-animation-duration: 1100ms;
-}
-
-.bubble110 {
-  left: 1390px;
-  -webkit-animation-delay: 1000ms;
-  -webkit-animation-duration: 1000ms;
-}
-
-.bubble111 {
-  left: 1420px;
-  -webkit-animation-delay: 1200ms;
-  -webkit-animation-duration: 1200ms;
-}
-
-.bubble112 {
-  left: 1450px;
-  -webkit-animation-delay: 1500ms;
-  -webkit-animation-duration: 1500ms;
-}
+/* Title page  */
 
 li {
   margin-top: 1%;
 }
 
-select.form-control {
-  display: inline-block;
-}
-
-
-
 #titlePage {
   text-align: center;
   color: black;
-}
-.radio {
-  text-align: left;
-  margin-left: 45%;
-}
-.form-group {
-  text-align: center;
-}
-
-.submitControl {
-  text-align: center;
-}
-
-div[value="1"],
-div[value="2"],
-div[value="3"],
-div[value="4"],
-#submit,
-#back,
-#next {
-  display: none;
-  text-align: center;
-}
-
-.controls {
-  text-align: center;
-}
-
-ul#result {
-  text-align: left;
-  color: black; 
-  font-size: 70px;
-  text-shadow: 5px 5px #007272;
-}
-
-ul#result li{
-  text-align: left;
-  vertical-align: middle;
-  color: black; 
-  font-size: 50px;
-  text-shadow: 5px 5px #007272;
-  text-indent: 20px;
-}
-
-#resultError{
-  text-align: left;
-  color: black; 
-  font-size: 70px;
-  text-shadow: 5px 5px #007272;
-}
-
-/*Styling for quiz end*/
-
-.form-control#state {
-  display: block; 
-  margin: auto;  
-}
-
-.center {
-  font-size: 110%; 
-  text-align: left; 
-  font-family: monospace;
-  display: block; 
-  margin: auto; 
-  padding-top: 10px; 
-}
-
-.form-control {
-  display: block;
-  margin: 0 auto;
-}
-
-.post {
-  list-style-type: none;
-  font-family: monospace;
-  margin: 0; 
-  padding-left: 34%;
-  line-height: 1.45em;
-}
-
-.postTop {
-  padding-top: 15px; 
-  font-family: monospace; 
-  list-style-type: none;
-  padding-left: 31%; 
-}
-
-.bottomBorder {
-  margin: auto; 
-  margin-top: 28px;  
-  width: 40%; 
-  border-bottom: 1px solid rgb(212, 174, 174);
-  line-height: 1em; 
 }
 
 .bottomBorderTitle {
@@ -1519,56 +1510,4 @@ ul#result li{
   padding-top: 5px; 
   width: 70%; 
   border-bottom: 1px solid rgb(212, 174, 174);
-}
-
-#output {
-  margin-top: 10px;
-  height: 100%; 
-}
-
-/* #colBottom {
-  margin-bottom: 5px; 
-} */
-
-.backgroundFrame {
-  width: 70%;
-  height: 100%; 
-  margin: 0 auto;
-  background-color: rgb(243, 243, 243);
-  overflow: hidden; 
-}
-
-#colBottom {
-  margin-bottom: 50px; 
-}
-
-body#breweryFinder {
-  height: 10000px; 
-}
-
-html#breweryFinder{
-  height: 100%; 
-}
-
-.bottomBorderPost {
-  margin: auto; 
-  margin-top: 30px; 
-  width: 50%; 
-  border-bottom: 1px solid rgb(212, 174, 174);
-}
-
-.postTopCenter {  
-  padding-top: 15px; 
-  font-family: monospace; 
-  list-style-type: none;
-  text-align: center; 
-  margin: auto; 
-}
-
-#cartoonBeer {
-  margin: auto; 
-  display: none; 
-  padding-top: 20px; 
-  width: 8%;
-  height: auto; 
 }
