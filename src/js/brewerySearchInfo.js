@@ -68,9 +68,6 @@ export default class BrewerySearchInfo {
 
   //Calculates the distance between the currently indexed brewery & the user's address. 
   static async breweryDistanceCalculator(indexedBrewery, userCoords, stateName) {
-    console.log(indexedBrewery);
-    console.log(userCoords);
-    console.log(stateName);
     const breweryMapQuestApiResponse = await ApiClient.addressCoords(indexedBrewery.street.replace(/ /g,"+"), indexedBrewery.city.replace(/ /g,"+"), stateName, indexedBrewery.zip); 
     const breweryLatLng = breweryMapQuestApiResponse.results[0].locations[0].displayLatLng;
     const deltaLng = (breweryLatLng.lng - userCoords.lng);
