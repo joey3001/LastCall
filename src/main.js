@@ -2,8 +2,8 @@ import $ from "jquery";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-import BrewerySearchInfo from "./js/brewerySearchInfo.js";
-import UserInfo from "./js/userInfo";
+import BrewerySearchInfo from "./js/BrewerySearchInfo.js";
+import UserInfo from "./js/UserInfo";
 
 //Logic for confirming you are 21 on the opening page
 $(".btn-no").click(function () {
