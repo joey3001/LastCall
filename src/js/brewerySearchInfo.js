@@ -60,7 +60,6 @@ export default class BrewerySearchInfo {
         $('<li class=' + 'post' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></li>').hide().appendTo(selector).fadeIn();
         $('<div class=' + 'bottomBorderPost' + '></div>').hide().appendTo(selector).fadeIn();  
       }
-      //https://www.google.com/maps/dir/?api=1&origin=undefined+undefined++District+of+Columbia+undefined&destination=900+F+St.+NW+Washington+undefined+20004
     } 
     else {
       $(selector).append('<li class=' + 'postTopCenter' + '>' + 'Your search returned no results. Try expanding your search radius.' + '</li>');

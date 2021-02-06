@@ -14,7 +14,10 @@ $(".btn-no").click(function () {
 $("#addressInput").submit(async function () {
   event.preventDefault();
 
-  //Run 'loading' animation function
+  //Remove margin filler 
+  $('#marginFiller').css("display", "none");
+
+  //Run 'loading' animation
   $('#cartoonBeer').fadeIn(1500).css("display","block");
 
   //Take input from user to construct args
@@ -28,17 +31,17 @@ $("#addressInput").submit(async function () {
 
   const searchRadius = parseInt($("#searchRadius").val());
 
-  //Pass args into a constructor to house user info & get user coordinates
+  //Pass args into a constructor to house user info & get user lat & lon coordinates
   let userInfo = new UserInfo(street, city, zip, stateName, stateAbv, searchRadius);
   await userInfo.getCoords(); 
 
-  // Pass user into a constructor to perform operations with
+  // Pass user info into a constructor to perform operations with
   let brewerySearchInfo = new BrewerySearchInfo(userInfo);
   await brewerySearchInfo.getAlcoholStoreList(); 
   brewerySearchInfo.filterAlcoholStoresByBreweries();
   await brewerySearchInfo.addDistancetoBreweries();
 
-  //End 'loading' animation function & execute additional operations upon completion of the animation
+  //End 'loading' animation & execute additional operations upon completion of the animation
   $('#cartoonBeer').fadeOut(1500, () => {
     brewerySearchInfo.getLocalBreweries(); 
     brewerySearchInfo.sortLocalBreweries();

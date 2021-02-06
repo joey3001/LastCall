@@ -1314,6 +1314,14 @@ body {
   text-align: left; 
 }
 
+.bottomBorderBeer101 {
+  margin: auto; 
+  padding-top: 5px; 
+  width: 45%; 
+  border-bottom: 1px solid rgb(212, 174, 174);
+}
+
+
 /* brewery finder page  */
 
 .backgroundFrame h3 {
@@ -1401,7 +1409,7 @@ h3#breweryFinder {
 .backgroundFrame {
   width: 70%;
   height: 100%; 
-  margin: 0 auto;
+  margin: auto;
   background-color: rgb(243, 243, 243);
   overflow: hidden; 
 }
@@ -1411,11 +1419,9 @@ h3#breweryFinder {
 }
 
 body#breweryFinder {
-  height: 10000px; 
 }
 
 html#breweryFinder{
-  height: 100%; 
 }
 
 .bottomBorderPost {
@@ -1471,13 +1477,13 @@ html#breweryFinder{
 
 .col-7 {
   margin: auto; 
-  margin-top: 30px; 
+  margin-top: 50px; 
   text-align: center;
   border: 1px solid rgb(212, 174, 174); 
   padding: 5px;
   border-radius: 3px;
   background-color: white;
-  margin-bottom: 50%; 
+  margin-bottom: 20%; 
 }
 
 .col-7 p {
@@ -1510,4 +1516,8 @@ li {
   padding-top: 5px; 
   width: 70%; 
   border-bottom: 1px solid rgb(212, 174, 174);
+}
+
+#marginFiller {
+  margin-bottom: 8%; 
 }
