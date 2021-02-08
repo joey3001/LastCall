@@ -6,7 +6,6 @@ const Dotenv = require("dotenv-webpack");
 module.exports = {
   entry: "./src/main.js",
   output: {
-    publicPath : "/LastCall",
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
