@@ -88,7 +88,6 @@ _If you have any questions, ideas or concerns, please, contact us by email:_
 Joseph Nero at [josephnero111@gmail.com](mailto:josephnero111@gmail.com)<br>
 Eric Endsley at [eric.endsley4@gmail.com](mailto:eric.endsley4@gmail.com)<br>
 Agata Kolodziej at [agatakolohe@gmail.com](mailto:agatakolohe@gmail.com)<br>
-Joseph Nero at [josephnero111@gmail.com](mailto:josephnero111@gmail.com)<br>
 Constantine Yakubovski at [faustlarsen@gmail.com](mailto:faustlarsen@gmail.com)<br>
 Nataliya Zhuravleva at [natalindria@gmail.com](mailto:natalindria@gmail.com)<br>
 
