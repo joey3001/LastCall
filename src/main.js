@@ -45,6 +45,6 @@ $("#addressInput").submit(async function () {
   $('#cartoonBeer').fadeOut(1500, () => {
     brewerySearchInfo.getLocalBreweries(); 
     brewerySearchInfo.sortLocalBreweries();
-    brewerySearchInfo.postLocalBreweries("#output", street, city, zip); 
+    brewerySearchInfo.postLocalBreweries("#output"); 
   }); 
 });

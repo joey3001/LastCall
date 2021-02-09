@@ -30,7 +30,7 @@ The website contains the following pages:_
 
 _Visit [Last Call webpage](https://joey3001.github.io/LastCall/) at https://joey3001.github.io/LastCall/_ to view application on GitHub pages.\_
 
-### <span style="color:#c4f4ef">Open Locally</span>
+### <span style="color:#c4f4ef">Open the page locally</span>
 
 1. _Navigate to the [Last Call repo](https://github.com/joey3001/LastCall) at https://github.com/joey3001/LastCall_ to view the project files and commits.
 2. _Click on the green button labeled "Code"_ to copy repository URL.
@@ -88,7 +88,6 @@ _If you have any questions, ideas or concerns, please, contact us by email:_
 Joseph Nero at [josephnero111@gmail.com](mailto:josephnero111@gmail.com)<br>
 Eric Endsley at [eric.endsley4@gmail.com](mailto:eric.endsley4@gmail.com)<br>
 Agata Kolodziej at [agatakolohe@gmail.com](mailto:agatakolohe@gmail.com)<br>
-Joseph Nero at [josephnero111@gmail.com](mailto:josephnero111@gmail.com)<br>
 Constantine Yakubovski at [faustlarsen@gmail.com](mailto:faustlarsen@gmail.com)<br>
 Nataliya Zhuravleva at [natalindria@gmail.com](mailto:natalindria@gmail.com)<br>
 
