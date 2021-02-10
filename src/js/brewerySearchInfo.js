@@ -30,7 +30,7 @@ export default class BrewerySearchInfo {
   //Adds distance key:value pair to brewery objects
   async addDistancetoBreweries() {
     this.breweriesWithDistance = await Promise.all(this.breweriesByState.map(brewery =>  
-      BrewerySearchInfo.breweryDistanceCalculator(brewery, this.user.coords, this.user.stateName)
+      this.breweryDistanceCalculator(brewery)
     ));
   }
 
@@ -66,11 +66,11 @@ export default class BrewerySearchInfo {
   }
 
   //Calculates the distance between the currently indexed brewery & the user's address. 
-  static async breweryDistanceCalculator(indexedBrewery, userCoords, stateName) {
-    const breweryMapQuestApiResponse = await ApiClient.addressCoords(indexedBrewery.street.replace(/ /g,"+"), indexedBrewery.city.replace(/ /g,"+"), stateName, indexedBrewery.zip); 
+  async breweryDistanceCalculator(indexedBrewery) {
+    const breweryMapQuestApiResponse = await ApiClient.addressCoords(indexedBrewery.street.replace(/ /g,"+"), indexedBrewery.city.replace(/ /g,"+"), this.user.stateName, indexedBrewery.zip); 
     const breweryLatLng = breweryMapQuestApiResponse.results[0].locations[0].displayLatLng;
-    const deltaLng = (breweryLatLng.lng - userCoords.lng);
-    const deltaLat = (breweryLatLng.lat - userCoords.lat);
+    const deltaLng = (breweryLatLng.lng - this.user.coords.lng);
+    const deltaLat = (breweryLatLng.lat - this.user.coords.lat);
     const distance = 69 * Math.sqrt(Math.pow(deltaLng, 2) + Math.pow(deltaLat, 2));
     indexedBrewery.distance = distance; 
     return indexedBrewery;
