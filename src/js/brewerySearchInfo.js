@@ -16,7 +16,7 @@ export default class BrewerySearchInfo {
   }
 
   //Uses BeerMapping API to get a list of all stores that sell alcohol in the user's state
-  async getAlcoholStoreList() {
+  async setAlcoholStoreList() {
     this.alcoholStoreList = await ApiClient.alcoholStoreList(this.user.stateAbv); 
   }
 
@@ -35,7 +35,7 @@ export default class BrewerySearchInfo {
   }
 
   //Filters breweries that are within the user's specified search radius
-  getLocalBreweries() {
+  setLocalBreweries() {
     this.breweriesFilteredByDistance = this.breweriesWithDistance.filter(
       (brewery) => brewery.distance <= this.user.searchRadius
     );

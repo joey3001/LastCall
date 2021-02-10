@@ -37,13 +37,13 @@ $("#addressInput").submit(async function () {
 
   // Pass user info into a constructor to perform operations with
   let brewerySearchInfo = new BrewerySearchInfo(userInfo);
-  await brewerySearchInfo.getAlcoholStoreList(); 
+  await brewerySearchInfo.setAlcoholStoreList(); 
   brewerySearchInfo.filterAlcoholStoresByBreweries();
   await brewerySearchInfo.addDistancetoBreweries();
 
   //End 'loading' animation & execute additional operations upon completion of the animation
   $('#cartoonBeer').fadeOut(1500, () => {
-    brewerySearchInfo.getLocalBreweries(); 
+    brewerySearchInfo.setLocalBreweries(); 
     brewerySearchInfo.sortLocalBreweries();
     brewerySearchInfo.postLocalBreweries("#output"); 
   }); 
