@@ -8,7 +8,7 @@ export default class BrewerySearchInfo {
     this.user = user; 
 
     //Brewery info populated by the search/methods
-    this.alcoholStoreListt;
+    this.alcoholStoreList;
     this.breweriesByState;
     this.breweriesWithDistance;
     this.breweriestFilteredByDistance; 
@@ -55,9 +55,8 @@ export default class BrewerySearchInfo {
       let post = ''; 
       for (let i = 0; i < this.breweriesFilteredAndSortedByDistance.length; i++) {
         let brewery = this.breweriesFilteredAndSortedByDistance[i];
-        post += '<li class=' + 'postTop' + '>' + brewery.name + '</li>' + '<li class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</li>' + '<li class=' + 'post' + '>Address: <a href=https://www.google.com/maps/dir/?api=1&origin=' + this.user.street + '+' + this.user.city + "+" + "+" + this.user.stateName + "+" + this.user.zip + '&destination=' + brewery.street.replace(/\s/g, '+') + '+' + brewery.city + '+' + this.user.stateName + '+' + brewery.zip + '>' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</a></li>' + '<li class=' + 'post' + '>Website: <a href=https://www.' + brewery.url.toString() + '>' + brewery.url + '</a></li>' + '<div class=' + 'bottomBorderPost' + '></div>'
+        post += '<li class=' + 'postTop' + '>' + brewery.name + '</li>' + '<li class=' + 'post' + '>Distance: ' + brewery.distance.toFixed(1) + ' Miles</li>' + '<li class=' + 'post' + '>Address: <a href=https://www.google.com/maps/dir/?api=1&origin=' + this.user.street + '+' + this.user.city + "+" + "+" + this.user.stateName + "+" + this.user.zip + '&destination=' + brewery.street.replace(/\s/g, '+') + '+' + brewery.city + '+' + this.user.stateName + '+' + brewery.zip + '>' + brewery.street + ', ' + brewery.city + ', ' + brewery.zip + '</a></li>' + '<li class=' + 'post' + '>Website: <a href=https://www.' + brewery.url.replace(/%2f/gi,'') + '>' + brewery.url.replace(/%2f/gi,'') + '</a></li>' + '<div class=' + 'bottomBorderPost' + '></div>';
       }
-      console.log(post); 
       $(post).hide().appendTo(selector).fadeIn();
     } 
     else {
